@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `Diego Ulises Martínez`,
+    description: `Portfolio`,
+    author: `@diego.ulisess`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -21,10 +21,27 @@ module.exports = {
         name: `gatsby-starter-default`,
         short_name: `starter`,
         start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
+        background_color: `#4353ff`,
+        theme_color: `#000000`,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        icon: `src/images/Deer.png`, // This path is relative to the root of the site.
+      },
+    },
+    {
+      resolve: "gatsby-plugin-web-font-loader",
+      options: {
+        custom: {
+          families: [
+            "Acrom Bold,Acrom Light, Acrom Medium, Acrom Regular, Acrom Thin, MADE Evolve Sans Bold EVO, MADE Evolve Sans Light EVO, MADE Evolve Sans Medium EVO, MADE Evolve Sans Regular EVO, MADE Evolve Sans Thin EVO, MADE Evolve Sans Light",
+          ],
+          urls: ["/fonts/fonts.css"],
+        },
+      },
+    },
+    {
+      resolve: `gatsby-plugin-styled-components`,
+      options: {
+        // Add any options here
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
