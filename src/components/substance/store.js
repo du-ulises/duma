@@ -10,7 +10,7 @@ const state = {
       offset: 1,
       factor: 2.0,
       header: "Agenda Cave.",
-      image: "./images/R1.jpg",
+      image: "/substance/R1.jpg",
       aspect: 0.665,
       text:
         "Agenda Cave is a mobile application made to measure for The Cave Barbershop so customers can schedule an appointment for any of the services they offer.",
@@ -19,7 +19,7 @@ const state = {
       offset: 2,
       factor: 2.25,
       header: "CoWorker Platform.",
-      image: "./images/R2 COWORKER-02-01.jpg",
+      image: "/substance/R2 COWORKER-02-01.jpg",
       aspect: 1.5037,
       text:
         "By Digital Ignition. Coworker Platform is a Business Management Systems in charge of automating the company's operational processes.",
@@ -28,7 +28,7 @@ const state = {
       offset: 3,
       factor: 2.0,
       header: "Despensa App.",
-      image: "./images/R3 DESPENSA APP-01.jpg",
+      image: "/substance/R3 DESPENSA APP-01.jpg",
       aspect: 1.5,
       text:
         "Despensa App is an e-commerce that helps you find products from your nearest store, provides tools to manage your pantry, shopping list, secure payments and more.",
@@ -37,7 +37,7 @@ const state = {
       offset: 4,
       factor: 2.0,
       header: "Acamex.",
-      image: "./images/Acamex-01.jpg",
+      image: "/substance/Acamex-01.jpg",
       aspect: 0.665,
       text:
         "By Digital Ignition. The Civil Association of Approved Certifiers in Mexico, ACAMEX for its initials in Spanish, is a results-oriented website of digital transformation strategies, provides a blog for ACAMEX members.",
@@ -46,7 +46,7 @@ const state = {
       offset: 5,
       factor: 1.75,
       header: "Travel App",
-      image: "./images/Travel-01.jpg",
+      image: "/substance/Travel-01.jpg",
       aspect: 1.55,
       text:
         "Travel App is a mobile application for travelers, it allows you to capture photos and share them with your friends, so you can also see reviews of other places, add comments and mark your favorites.",
@@ -55,7 +55,7 @@ const state = {
       offset: 7,
       factor: 1.05,
       header: "Sistema de Control Escolar Maristas.",
-      image: "./images/Marista-01.jpg",
+      image: "/substance/Marista-01.jpg",
       aspect: 1.77,
       text: "School Control System for the Marist University, is a management system dedicated to providing a communication bridge between teachers, students and career coordinators.",
     },

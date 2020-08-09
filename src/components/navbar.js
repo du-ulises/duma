@@ -7,6 +7,8 @@ import { Flex, Box } from "grid-styled"
 import scrollToElement from "scroll-to-element"
 import { media } from "../utils/style"
 import "../css/neon.css"
+import blueMp3 from "../audio/Blue.mp3"
+import soundMp3 from "../audio/sound.mp3"
 
 const Base = styled.div`
   padding: 0;
@@ -294,9 +296,9 @@ function NavBar(props) {
         <span id="bar-2" className={playing ? "sbar" : "sbar noAnim"}></span>
         <span id="bar-3" className={playing ? "sbar" : "sbar noAnim"}></span>
         <span id="bar-4" className={playing ? "sbar" : "sbar noAnim"}></span>
-        <ReactHowler src={["../audio/Blue.mp3"]} playing={playing} loop={true} />
+        <ReactHowler src={[blueMp3]} playing={playing} loop={true} />
         <ReactHowler
-          src={["../audio/sound.mp3"]}
+          src={[soundMp3]}
           playing={sound}
           onEnd={() => {
             setSound(false)

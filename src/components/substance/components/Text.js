@@ -5,7 +5,7 @@ import usePromise from "react-promise-suspense"
 import lerp from "lerp"
 import state from "../store"
 
-function Text({ children, size = 1, left, right, top, bottom, color = "white", opacity = 1, height = 0.01, layers = 0, font = "/MADE Evolve Sans EVO_Bold.json", ...props }) {
+function Text({ children, size = 1, left, right, top, bottom, color = "white", opacity = 1, height = 0.01, layers = 0, font = "/substance/MADE Evolve Sans EVO_Bold.json", ...props }) {
   const data = useLoader(FontLoader, font)
   const geom = usePromise(() => new Promise(res => res(new TextBufferGeometry(children, { font: data, size: 1, height, curveSegments: 32 }))), [children])
   const onUpdate = useCallback(

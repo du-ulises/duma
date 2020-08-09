@@ -17,7 +17,7 @@ const LightTooltip = withStyles(theme => ({
 }))(Tooltip)
 
 const Icon = ({ name, href, colorx }) => (
-  <a href={href}>
+  <a href={href} target="_blank">
     {name === "GitHubIcon" ? (
       <LightTooltip title="GitHub" placement="top" TransitionComponent={Fade}>
         <Avatar style={{ color: colorx, backgroundColor: "transparent" }}>

@@ -13,6 +13,9 @@ import SEO from "../components/seo"
 import "../css/neon.css"
 import "../components/substance/styles.css"
 
+import tidesOfTimeMp3 from "../audio/Tides of time.mp3"
+import soundMp3 from "../audio/sound.mp3"
+
 function Startup() {
   const ref = useRef()
   useFrame(
@@ -99,6 +102,7 @@ function Paragraph({ image, index, offset, factor, header, aspect, text }) {
 }
 
 function Content() {
+
   const images = useLoader(
     TextureLoader,
     state.paragraphs.map(({ image }) => image)
@@ -120,11 +124,11 @@ function Content() {
             WORK
           </Text>
         </Block>
-        <Block factor={1.0}>
+        {/* <Block factor={1.0}>
           <Dom position={[-w / 3.2, -w * 0.08 + 0.25, -1]}>
             Frontend Web & Mobile Developer + UX / UI Designer
           </Dom>
-        </Block>
+        </Block> */}
       </Block>
       <Block factor={1.2} offset={5.7}>
         <MultilineText
@@ -227,7 +231,7 @@ function App() {
               }
             }}
             children="DUMA"
-            style={{ fontFamily: "MADE Evolve Sans Bold EVO", color: "#fff" }}
+            style={{ fontFamily: "MADE Evolve Sans Bold EVO", color: "#fff", cursor: "pointer" }}
           >
             DUMA
           </a>
@@ -319,12 +323,12 @@ function App() {
         <span id="bar-3" className={playing ? "sbar" : "sbar noAnim"}></span>
         <span id="bar-4" className={playing ? "sbar" : "sbar noAnim"}></span>
         <ReactHowler
-          src={["../audio/Tides of time.mp3", "../audio/Blue.mp3"]}
+          src={[tidesOfTimeMp3]}
           playing={playing}
           loop={true}
         />
         <ReactHowler
-          src={["../audio/sound.mp3"]}
+          src={[soundMp3]}
           playing={sound}
           onEnd={() => {
             setSound(false)

@@ -11,15 +11,15 @@
   color: white;
 }
 
-/* body {
+body {
   margin: 0;
-  padding: 0;
+  /* padding: 0;
   background: radial-gradient(circle, #2b36ac 0%, #161b49 100%);
   overflow: hidden;
   font-family: 'MADE Evolve Sans Regular EVO', sans-serif;
   color: #acacac;
-  font-size: 0.9rem;
-} */
+  font-size: 0.9rem; */
+}
 
 a {
   color: #545454;
