@@ -685,10 +685,11 @@ const Tech = () => {
           Google Cloud Platform
         </Typography>
       </div>
+      
       <div className="dev-item">
         <Img
           style={{ maxHeight: "100%" }}
-          fluid={images.npm.childImageSharp.fluid}
+          fluid={images.illustrator.childImageSharp.fluid}
           imgStyle={{ objectFit: "contain" }}
           className="dev-icon"
         />
@@ -700,9 +701,10 @@ const Tech = () => {
             fontSize: "1rem",
           }}
         >
-          npm
+          Adobe Illustrator
         </Typography>
       </div>
+      
       <div className="dev-item">
         <Img
           style={{ maxHeight: "100%" }}
@@ -760,9 +762,9 @@ const Tech = () => {
       <div className="dev-item">
         <Img
           style={{ maxHeight: "100%" }}
-          fluid={images.illustrator.childImageSharp.fluid}
+          fluid={images.npm.childImageSharp.fluid}
           imgStyle={{ objectFit: "contain" }}
-          className="dev-icon"
+          className="dev-icon npm"
         />
         <Typography
           style={{
@@ -772,9 +774,11 @@ const Tech = () => {
             fontSize: "1rem",
           }}
         >
-          Adobe Illustrator
+          npm
         </Typography>
       </div>
+
+
       <div className="dev-item">
         <Img
           style={{ maxHeight: "100%" }}
