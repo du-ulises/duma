@@ -14,6 +14,7 @@ import HeroText from "../components/heroText"
 import SocialIcons from "../components/socialIcons"
 import Tech from "../components/tech"
 import Experience from "../components/experience"
+import DownloadButton from "../components/downloadButton";
 import "../css/neon.css"
 // import GitHubIcon from "@material-ui/icons/GitHub"
 // import LinkedInIcon from "@material-ui/icons/LinkedIn"
@@ -321,8 +322,8 @@ const IndexPage = props => {
               <div style={{ color: "#d4af37", display: "inline" }}>
                 Diego Ulises Martínez Aguilar
               </div>
-              , I'm a Frontend Web & Mobile Developer and Designer, currently
-              working in a digital development agency,{" "}
+              , I'm a Frontend Web & Mobile Developer and UX / UI Designer,
+              currently working in a digital development agency,{" "}
               <a
                 href="https://digitalignition.com.mx/en/home/"
                 target="_blank"
@@ -544,7 +545,7 @@ const IndexPage = props => {
         </Title>
         <Experience />
       </Section>
-      <a id="honoursAndAwards">Honours & Awards</a>
+      <a id="honoursAndAwards">Contact</a>
       <Section>
         <Title
           style={{
@@ -553,8 +554,9 @@ const IndexPage = props => {
             color: "#fff",
           }}
         >
-          Honours & Awards
+          Contact
         </Title>
+        <DownloadButton/>
       </Section>
     </Content>
   )

@@ -1255,7 +1255,7 @@ h2 {
 /* Scroll Down Button Animation */
 .scroll-down{
   cursor: pointer;
-  position: fixed;
+  position: absolute;
   bottom: 2rem;
   left: 95%;
   transform: translateX(-50%);

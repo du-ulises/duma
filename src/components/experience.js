@@ -172,7 +172,7 @@ const Experience = () => {
           icon={<AcUnitIcon />}
         />
       </VerticalTimeline>
-      <div id="app" class="containerParallax">
+      {/* <div id="app" class="containerParallax">
         <card data-image="https://images.unsplash.com/photo-1479660656269-197ebb83b540?dpr=2&auto=compress,format&fit=crop&w=1199&h=798&q=80&cs=tinysrgb&crop=">
           <h1 slot="header">Digital Ignition</h1>
           <p slot="content">
@@ -204,6 +204,7 @@ const Experience = () => {
           </p>
         </card>
       </div>
+     */}
     </div>
   )
 }
