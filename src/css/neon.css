@@ -1065,6 +1065,7 @@ li span.active::before {
   border-radius: 0.25em;
   padding: 1em;
   box-shadow: 0 3px 0 #1779ff;
+  opacity: 1;
 }
 
 /* CARD About Me */
@@ -1175,6 +1176,20 @@ h2 {
   background-size: 100% 100%;
   filter: grayscale(100%);
 }
+
+@media only screen and (max-width: 400px) {
+  .about .card .pic {
+    width: 290px;
+    height: 200px;
+  }
+  .about .card p {
+    right: 0px;
+}
+.about .card h2 {
+  right: 60px;
+}
+}
+
 .about .card .social {
   position: absolute;
   left: 60px;

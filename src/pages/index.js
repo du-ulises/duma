@@ -300,7 +300,7 @@ const IndexPage = props => {
             fontFamily: "MADE Evolve Sans Medium EVO",
             fontSize: 24,
             color: "#fff",
-            //color: "#d4af37",
+            //color: "#1779ff",
           }}
         >
           About Me
@@ -314,11 +314,11 @@ const IndexPage = props => {
         >
           Diego * Ulises * Martínez * Aguilar *
         </div>
-        <Grid container justify="center" alignItems="center" spacing={2}>
-          <Grid item xs={10} md={6}>
+        <Grid container justify="center" alignItems="stretch" spacing={2}>
+          <Grid item xs={12} md={6}>
             <Typography style={{ color: "#fff", textAlign: "center" }}>
               My name is{" "}
-              <div style={{ color: "#d4af37", display: "inline" }}>
+              <div style={{ color: "#1779ff", display: "inline", textShadow: "0px 0px 10px rgba(255, 255, 255, 0.9)" }}>
                 Diego Ulises Martínez Aguilar
               </div>
               , I'm a Frontend Web & Mobile Developer and UX / UI Designer,
@@ -327,7 +327,7 @@ const IndexPage = props => {
                 href="https://digitalignition.com.mx/en/home/"
                 target="_blank"
                 style={{
-                  color: "#d4af37",
+                  color: "#fff",
                   fontFamily: "Acrom Medium",
                 }}
               >
@@ -341,7 +341,7 @@ const IndexPage = props => {
               and UX/UI Design.
             </Typography>
           </Grid>
-          <Grid item xs={11} md={6}>
+          <Grid item xs={12} md={6}>
             <div class="about">
               <div class="card card2">
                 <h2

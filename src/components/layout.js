@@ -149,7 +149,7 @@ const Layout = ({ location, children, handleChange }) => {
                   }}
                 >
                   <main>{children}</main>
-                  <footer
+                  {/* <footer
                     style={{
                       alignItems: "center",
                       textAlign: "center",
@@ -220,7 +220,7 @@ const Layout = ({ location, children, handleChange }) => {
                         )
                       })}
                     </Grid>
-                  </footer>
+                  </footer> */}
                 </div>
                 <div className="banner">
                   <h1
