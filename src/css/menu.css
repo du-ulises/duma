@@ -1,0 +1,191 @@
+.container {
+  /* width: 1280px;
+  min-width: 1280px;
+  margin: 0 auto;*/
+  position: fixed;
+  z-index: 500;
+  top: 20px;
+}
+
+.container .wrapper {
+  padding: 0 48px;
+}
+
+.container .wrapper .home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+.container .wrapper .home p {
+  font-size: 0.75rem;
+  letter-spacing: 0.3rem;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.container .wrapper .home h5 {
+  margin-top: 260px;
+  font-size: 24px;
+  font-weight: 600;
+  padding-right: 360px;
+}
+.inner-header {
+  position: relative;
+  z-index: 300;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.inner-header .logo a {
+  font-weight: 700;
+  font-size: 1rem;
+  text-decoration: none;
+  color: #000;
+}
+.inner-header .menu button {
+  border: none;
+  background: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 1rem;
+  mix-blend-mode: difference;
+  color: #fff;
+}
+.hamburger-menu {
+  display: none;
+  z-index: 499;
+  top: 0;
+  left: 0;
+  right: 0;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+}
+.hamburger-menu .menu-secondary-background-color {
+  background: #000;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+}
+.hamburger-menu .menu-layer {
+  position: relative;
+  background: #4353ff;
+  height: 100%;
+  overflow-x: hidden;
+}
+.hamburger-menu .menu-layer .menu-city-background {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  animation-name: backgroundEffect;
+  animation-duration: 30s;
+  animation-iteration-count: infinite;
+}
+.hamburger-menu .menu-layer .wrapper {
+  position: relative;
+}
+.hamburger-menu .menu-layer .wrapper .menu-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  top: 80px;
+}
+.hamburger-menu .menu-layer .wrapper .menu-links nav {
+  display: block;
+}
+.hamburger-menu .menu-layer .wrapper .menu-links nav ul {
+  margin: 0;
+  padding: 0;
+}
+.hamburger-menu .menu-layer .wrapper .menu-links nav ul li {
+  list-style: none;
+  font-size: 2rem;
+  font-weight: 700;
+  cursor: pointer;
+  height: 4rem;
+  overflow: hidden;
+  position: relative;
+  width: 700px;
+}
+.hamburger-menu .menu-layer .wrapper .menu-links nav ul li a {
+  position: absolute;
+  color: #fff;
+  text-decoration: none;
+}
+.hamburger-menu .menu-layer .wrapper .menu-links nav ul li a:hover {
+  color: #000;
+}
+.hamburger-menu .menu-layer .wrapper .menu-links .info {
+  color: #fff;
+  width: 300px;
+}
+.hamburger-menu .menu-layer .wrapper .menu-links .info h3 {
+  font-size: 1.2rem;
+  margin: 8px auto;
+}
+.hamburger-menu .menu-layer .wrapper .menu-links .info p {
+  margin: 0 auto;
+  font-size: 0.8rem;
+}
+.hamburger-menu .menu-layer .wrapper .locations {
+  position: absolute;
+  bottom: -80px;
+  color: #fff;
+  margin-bottom: 0;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+.hamburger-menu .menu-layer .wrapper .locations span {
+  cursor: pointer;
+  font-weight: 400;
+  margin: 0 32px;
+  transition: 0.3s ease-in-out;
+}
+.hamburger-menu .menu-layer .wrapper .locations span:first-child {
+  /* margin-left: 64px; */
+}
+.hamburger-menu .menu-layer .wrapper .locations span:hover {
+  color: #fff;
+  background: #000;
+  padding: 8px 24px;
+  border-radius: 4px;
+}
+
+@keyframes backgroundEffect {
+  0% {
+    background-position: 0% 0%;
+  }
+
+  25% {
+    background-position: 40% 10%;
+  }
+
+  50% {
+    background-position: 0 10%;
+  }
+
+  75% {
+    background-position: 10% 40%;
+  }
+
+  100% {
+    background-position: 0% 0%;
+  }
+}

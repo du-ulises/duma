@@ -241,7 +241,7 @@ const Layout = ({ location, children, handleChange }) => {
                   </h1>
                   <div className="copyright">
                     <Typography style={{ color: "#fff" }}>
-                      © {new Date().getFullYear()}, Built with
+                      © {new Date().getFullYear()}, Designed & Developed by
                       {` `}
                       <a
                         href="https://www.gatsbyjs.org"
@@ -250,13 +250,13 @@ const Layout = ({ location, children, handleChange }) => {
                           textDecoration: "none",
                         }}
                       >
-                        Gatsby
+                        Diego Ulises
                       </a>
                     </Typography>
                   </div>
                   <div className="isometric">
                     <motion.div
-                      className="home container"
+                      className="home"
                       variants={containerVariants}
                       initial="hidden"
                       animate="visible"

@@ -797,6 +797,14 @@ li span.active::before {
   margin-left: 30px;
   position: fixed;
   top: 0;
+  z-index: 600;
+}
+#duma-menu {
+  right: 0;
+  position: fixed;
+  top: 0;
+  z-index: 600;
+  margin-right: 30px;
 }
 
 @media screen and (min-width: 53em) {
@@ -814,6 +822,14 @@ li span.active::before {
   }
   #duma-sound {
     margin-left: 50px;
+  }
+  #duma-menu {
+    right: 0;
+    left: 0;
+    position: fixed;
+    top: 0;
+    z-index: 600;
+    margin-left: 150px;
   }
 }
 
@@ -872,7 +888,6 @@ li span.active::before {
 }
 .isometric {
   position: absolute;
-  top: 0;
   z-index: 0;
   height: auto;
   width: 100%;
@@ -1219,6 +1234,7 @@ h2 {
   width: 180px;
   height: 64px;
   border-radius: 80px;
+  z-index: 2;
 }
 .about .card .social i:nth-of-type(1) {
   -webkit-transition-delay: 0.4s;
@@ -1291,7 +1307,7 @@ h2 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  z-index: 1000;
+  z-index: 350;
 }
 @media only screen and (max-width: 767px) {
   .scroll-down {

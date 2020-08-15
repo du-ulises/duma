@@ -22,6 +22,7 @@ import { Avatar, Tooltip, withStyles, Fade } from "@material-ui/core"
 import scrollToElement from "scroll-to-element"
 import ReactHowler from "react-howler"
 import soundMp3 from "../audio/sound.mp3"
+import Header from "../components/menu/components/Header";
 
 const LightTooltip = withStyles(theme => ({
   tooltip: {
@@ -568,7 +569,7 @@ const IndexPage = props => {
         </Title>
         <Experience />
       </Section>
-      <a id="honoursAndAwards">Contact</a>
+      <a id="contact">Contact</a>
       <Section>
         <Title
           style={{
@@ -612,6 +613,7 @@ const IndexPage = props => {
           setSound(false)
         }}
       />
+      <Header />
       <Layout location={props.location}>
         <SEO title="Home" />
         <div id="progressbar"></div>

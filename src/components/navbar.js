@@ -215,7 +215,7 @@ function NavBar(props) {
               </a>
               <a
                 onClick={() => {
-                  scrollToElement("#honoursAndAwards")
+                  scrollToElement("#contact")
                 }}
                 style={{
                   color: "#fff",
@@ -224,7 +224,7 @@ function NavBar(props) {
                   setSound(true)
                 }}
               >
-                Honours & Awards
+                Contact
               </a>
               {languages.map(language => {
                 let spanClass =
