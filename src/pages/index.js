@@ -14,7 +14,6 @@ import HeroText from "../components/heroText"
 import SocialIcons from "../components/socialIcons"
 import Tech from "../components/tech"
 import Experience from "../components/experience"
-import DownloadButton from "../components/downloadButton";
 import "../css/neon.css"
 // import GitHubIcon from "@material-ui/icons/GitHub"
 // import LinkedInIcon from "@material-ui/icons/LinkedIn"
@@ -556,7 +555,7 @@ const IndexPage = props => {
         >
           Contact
         </Title>
-        <DownloadButton/>
+        
       </Section>
     </Content>
   )
