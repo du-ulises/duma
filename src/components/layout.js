@@ -3,7 +3,7 @@
  * with Gatsby's useStaticQuery component
  */
 
-import React, { useState } from "react"
+import React, { useState, useRef } from "react"
 import { motion, AnimatePresence } from "framer-motion"
 import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
@@ -98,6 +98,7 @@ const variants = {
 }
 
 const Layout = ({ location, children, handleChange }) => {
+  const constraintsRef = useRef(null)
   const images = useStaticQuery(graphql`
     query {
       DeerDark: file(relativePath: { eq: "DeerDark.png" }) {
@@ -110,6 +111,13 @@ const Layout = ({ location, children, handleChange }) => {
       DeerLight: file(relativePath: { eq: "DeerLight.png" }) {
         childImageSharp {
           fluid(maxWidth: 400) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+      isometric: file(relativePath: { eq: "isometric.png" }) {
+        childImageSharp {
+          fluid(maxWidth: 800) {
             ...GatsbyImageSharpFluid
           }
         }
@@ -246,9 +254,30 @@ const Layout = ({ location, children, handleChange }) => {
                       </a>
                     </Typography>
                   </div>
-
+                  <div className="isometric">
+                    <motion.div
+                      className="home container"
+                      variants={containerVariants}
+                      initial="hidden"
+                      animate="visible"
+                      exit="exit"
+                    >
+                      <AnimatePresence>
+                        <Img
+                          imgStyle={{ objectFit: "contain" }}
+                          style={{ margin: "1rem", maxWidth: "800px" }}
+                          fluid={images.isometric.childImageSharp.fluid}
+                        />
+                      </AnimatePresence>
+                    </motion.div>
+                  </div>
                   <Typography
-                    style={{ position: "absolute", bottom: "10px", zIndex: 2, color: "#fff" }}
+                    style={{
+                      position: "absolute",
+                      bottom: "10px",
+                      zIndex: 2,
+                      color: "#fff",
+                    }}
                   >
                     #BoostYourBrand
                   </Typography>

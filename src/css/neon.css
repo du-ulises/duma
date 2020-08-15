@@ -65,7 +65,6 @@ body {
   background: #000000;
 }
 /* NEON BUTTON */
-
 #neonButton {
   position: relative;
   color: #4353ff;
@@ -77,6 +76,7 @@ body {
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
   overflow: hidden;
   cursor: pointer;
+  z-index: 1;
 }
 
 #neonButton::before {
@@ -860,12 +860,26 @@ li span.active::before {
 }
 #text {
   text-align: center;
+  z-index: 1;
+  text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.9);
 }
+
 .banner #text {
   position: relative;
   font-size: 12em;
   /* color: #4353ff; */
   font-family: "MADE Evolve Sans Bold EVO";
+}
+.isometric {
+  position: absolute;
+  top: 0;
+  z-index: 0;
+  height: auto;
+  width: 100%;
+}
+
+.copyright {
+  z-index: 1;
 }
 @media only screen and (max-width: 900px) {
   .banner #text {
@@ -1090,7 +1104,7 @@ h2 {
   height: 100%;
   justify-content: center;
   align-items: center;
-  flex-direction: column; 
+  flex-direction: column;
 }
 .about .card {
   position: relative;
@@ -1135,7 +1149,7 @@ h2 {
   height: 2px;
   border-radius: 2px;
   margin: 6px 0;
-  background-color: #E6E5E1;
+  background-color: #e6e5e1;
 }
 .about .card h2 {
   z-index: 99;
@@ -1184,10 +1198,10 @@ h2 {
   }
   .about .card p {
     right: 0px;
-}
-.about .card h2 {
-  right: 60px;
-}
+  }
+  .about .card h2 {
+    right: 60px;
+  }
 }
 
 .about .card .social {
@@ -1233,7 +1247,7 @@ h2 {
   bottom: 14px;
   width: 30px;
   height: 30px;
-  background-color: #DA4D1D;
+  background-color: #da4d1d;
   border: none;
   border-radius: 30px;
   cursor: pointer;
@@ -1268,7 +1282,7 @@ h2 {
 }
 
 /* Scroll Down Button Animation */
-.scroll-down{
+.scroll-down {
   cursor: pointer;
   position: absolute;
   bottom: 2rem;
@@ -1290,7 +1304,7 @@ h2 {
   height: 5rem;
   border: 2px solid #fff;
   border-radius: 2rem;
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
   display: flex;
 }
 
@@ -1312,7 +1326,7 @@ h2 {
   border-right-color: #fff;
   border-bottom-color: #fff;
   transform: rotate(45deg);
-  animation: arrow-down .5s alternate infinite;
+  animation: arrow-down 0.5s alternate infinite;
 }
 
 @keyframes move-wheel {
@@ -1343,22 +1357,6 @@ h2 {
     opacity: 1;
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* CARS PARALLAX */
 /* 
@@ -1473,3 +1471,26 @@ h2 {
   font-weight: 700;
   text-shadow: rgba(0, 0, 0, 0.5) 0 10px 10px;
 } */
+.example-container {
+  z-index: 2;
+}
+.example-container div {
+  background: white;
+  border-radius: 30px;
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  top: calc(50% - 150px / 2);
+  left: calc(50% - 150px / 2);
+}
+
+.example-container .drag-area {
+  opacity: 0.2;
+  background: white;
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  border-radius: 30px;
+  top: calc(50% - 150px);
+  left: calc(50% - 150px);
+}

@@ -1,10 +1,10 @@
-import React, { useEffect, useState } from "react"
+import React, { useEffect, useState, useRef } from "react"
 import { motion, AnimatePresence } from "framer-motion"
 import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
 import { Link } from "gatsby"
 import { Typography, Grid } from "@material-ui/core"
-import { Flex, Box } from "grid-styled"
+import { Flex } from "grid-styled"
 import styled, { css } from "styled-components"
 import { media } from "../utils/style"
 import Layout from "../components/layout"
@@ -15,8 +15,6 @@ import SocialIcons from "../components/socialIcons"
 import Tech from "../components/tech"
 import Experience from "../components/experience"
 import "../css/neon.css"
-// import GitHubIcon from "@material-ui/icons/GitHub"
-// import LinkedInIcon from "@material-ui/icons/LinkedIn"
 import InstagramIcon from "@material-ui/icons/Instagram"
 import FacebookIcon from "@material-ui/icons/Facebook"
 import TwitterIcon from "@material-ui/icons/Twitter"
@@ -160,6 +158,22 @@ const Section = styled.div`
       }
     `}
 `
+
+const containerVariants = {
+  hidden: {
+    opacity: 0,
+  },
+  visible: {
+    opacity: 1,
+    transition: { delay: 1.5, duration: 1.5 },
+  },
+  exit: {
+    x: "-100vh",
+    transition: { ease: "easeInOut" },
+  },
+}
+
+const duration = 0.5
 
 const IndexPage = props => {
   const [sound, setSound] = useState(false)
@@ -318,7 +332,13 @@ const IndexPage = props => {
           <Grid item xs={12} md={6}>
             <Typography style={{ color: "#fff", textAlign: "center" }}>
               My name is{" "}
-              <div style={{ color: "#1779ff", display: "inline", textShadow: "0px 0px 10px rgba(255, 255, 255, 0.9)" }}>
+              <div
+                style={{
+                  color: "#1779ff",
+                  display: "inline",
+                  textShadow: "0px 0px 10px rgba(255, 255, 255, 0.9)",
+                }}
+              >
                 Diego Ulises Martínez Aguilar
               </div>
               , I'm a Frontend Web & Mobile Developer and UX / UI Designer,
@@ -479,11 +499,15 @@ const IndexPage = props => {
         >
           Work
         </Title>
-        <Flex alignItems="center" flexDirection="column">
+        <Flex
+          alignItems="center"
+          flexDirection="column"
+          style={{ position: "relative" }}
+        >
           <Link
             to="/work"
             id="neonButton"
-            style={{ fontFamily: "MADE Evolve Sans Medium EVO" }}
+            style={{ fontFamily: "MADE Evolve Sans Bold EVO" }}
           >
             <span></span>
             <span></span>
@@ -555,10 +579,12 @@ const IndexPage = props => {
         >
           Contact
         </Title>
-        
       </Section>
     </Content>
   )
+
+  const constraintsRef = useRef(null);
+
   return (
     <>
       <div className="cursor"></div>
