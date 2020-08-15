@@ -11,7 +11,7 @@ import PropTypes from "prop-types"
 import styled, { createGlobalStyle } from "styled-components"
 import { createMuiTheme } from "@material-ui/core/styles"
 import { ThemeProvider } from "@material-ui/styles"
-import { Typography, Grid } from "@material-ui/core"
+import { Typography } from "@material-ui/core"
 
 import "../fonts/fonts.css"
 import "../css/neon.css"
@@ -241,16 +241,17 @@ const Layout = ({ location, children, handleChange }) => {
                   </h1>
                   <div className="copyright">
                     <Typography style={{ color: "#fff" }}>
-                      © {new Date().getFullYear()}, Designed & Developed by
+                      © {new Date().getFullYear()}, By
                       {` `}
                       <a
                         href="https://www.gatsbyjs.org"
                         style={{
-                          color: "#1779ff",
+                          //color: "#1779ff",
+                          color: "#fff",
                           textDecoration: "none",
                         }}
                       >
-                        Diego Ulises
+                        Diego Ulises Martínez
                       </a>
                     </Typography>
                   </div>

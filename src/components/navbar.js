@@ -277,12 +277,12 @@ function NavBar(props) {
           </motion.div>
         </Box>
       </Flex>
-      <div className="bars">
+      {/* <div className="bars">
         <label>
           <input type="checkbox" id="menu" onChange={props.changeSec} />
           <span className="toggle"></span>
         </label>
-      </div>
+      </div> */}
       <div
         className="footer-sound-main"
         onClick={() => {

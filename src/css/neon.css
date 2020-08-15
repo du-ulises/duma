@@ -349,9 +349,9 @@ nav #marker {
 
 /* MENU */
 .bars {
-  position: absolute;
+  position: fixed;
   top: 30px;
-  right: 80px;
+  right: 55px;
 }
 
 #menu {
@@ -363,7 +363,7 @@ nav #marker {
   width: 30px;
   height: 4px;
   border-radius: 5px;
-  background: #1779ff;
+  background: #fff;
   box-shadow: 0 0 5px #1779ff, 0 0 40px #1779ff, 0 0 80px #1779ff;
   cursor: pointer;
   transition: all 0.15s ease;
@@ -371,7 +371,7 @@ nav #marker {
 
 .toggle::before {
   content: "";
-  background: #1779ff;
+  background: #fff;
   box-shadow: 0 0 5px #1779ff, 0 0 40px #1779ff, 0 0 80px #1779ff;
   position: absolute;
   height: 4px;
@@ -382,7 +382,7 @@ nav #marker {
 }
 
 .toggle::after {
-  background: #1779ff;
+  background: #fff;
   box-shadow: 0 0 5px #1779ff, 0 0 40px #1779ff, 0 0 80px #1779ff;
   content: "";
   position: absolute;

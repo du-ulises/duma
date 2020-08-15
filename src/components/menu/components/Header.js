@@ -43,6 +43,12 @@ const Header = () => {
       setDisabled(false)
     }, 1200)
   }
+  const go = () => {
+    setState({
+      clicked: false,
+      menuName: "Close",
+    })
+  }
 
   return (
     <>
@@ -50,14 +56,20 @@ const Header = () => {
         <div className="wrapper">
           <div className="inner-header">
             <div className="menu">
-              <button onClick={handleMenu}>
+              <button
+                onClick={handleMenu}
+                style={{ position: "fixed", top: "20px", right: "20px" }}
+              >
                 <Typography>{state.menuName}</Typography>
               </button>
             </div>
           </div>
         </div>
       </div>
-      <Hamburger state={state} />
+      <Hamburger
+        state={state}
+        go={go}
+      />
     </>
   )
 }

@@ -4,11 +4,11 @@
   margin: 0 auto;*/
   position: fixed;
   z-index: 500;
-  top: 20px;
+  width: 100%;
 }
 
 .container .wrapper {
-  padding: 0 48px;
+  /* padding: 0 48px; */
 }
 
 .container .wrapper .home {
@@ -54,6 +54,11 @@
   font-size: 1rem;
   mix-blend-mode: difference;
   color: #fff;
+}
+@media only screen and (min-width: 767px) {
+  .inner-header .menu {
+    display: none;
+  }
 }
 .hamburger-menu {
   display: none;
@@ -122,7 +127,8 @@
   height: 4rem;
   overflow: hidden;
   position: relative;
-  width: 700px;
+  width: 100%;
+  padding-left: 1rem;
 }
 .hamburger-menu .menu-layer .wrapper .menu-links nav ul li a {
   position: absolute;
@@ -145,12 +151,13 @@
   font-size: 0.8rem;
 }
 .hamburger-menu .menu-layer .wrapper .locations {
-  position: absolute;
-  bottom: -80px;
+  position: fixed;
+  bottom: 20px;
   color: #fff;
   margin-bottom: 0;
   font-size: 0.8rem;
   font-weight: 600;
+  text-align: end;
 }
 .hamburger-menu .menu-layer .wrapper .locations span {
   cursor: pointer;
