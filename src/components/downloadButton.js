@@ -7,9 +7,9 @@ const downloadButton = () => {
   return (
     <div>
       <Helmet>
-        <script src={withPrefix("/js/anime.min.js")} type="text/javascript" />
-        <script src={withPrefix("/js/segment.min.js")} type="text/javascript" />
-        <script src={withPrefix("/js/downloadButton.js")} type="text/javascript" />
+        <script src={withPrefix("js/anime.min.js")} type="text/javascript" />
+        <script src={withPrefix("js/segment.min.js")} type="text/javascript" />
+        <script src={withPrefix("js/downloadButton.js")} type="text/javascript" />
       </Helmet>
       {/* <!-- Button container --> */}
       <div className="download-button-container">
