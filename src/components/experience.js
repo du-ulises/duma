@@ -14,14 +14,9 @@ const Experience = () => {
   return (
     <div>
       <VerticalTimeline>
-        <VerticalTimelineElement
+      <VerticalTimelineElement
           className="vertical-timeline-element--work"
-          contentStyle={{
-            background: "#fff",
-            color: "#fff",
-          }}
-          contentArrowStyle={{ borderRight: "7px solid  #fff" }}
-          date="2011 - present"
+          date="2008 - 2010"
           iconStyle={{ background: "#1f1f1f", color: "#fff" }}
           icon={<AcUnitIcon />}
         >
@@ -35,12 +30,9 @@ const Experience = () => {
             className="vertical-timeline-element-subtitle"
             style={{ fontFamily: "MADE Evolve Sans Medium Evo" }}
           >
-            Miami, FL
+            Los Angeles, CA
           </h4>
-          <Typography>
-            Creative Direction, User Experience, Visual Design, Project
-            Management, Team Leading
-          </Typography>
+          <Typography>User Experience, Visual Design</Typography>
         </VerticalTimelineElement>
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
@@ -125,10 +117,7 @@ const Experience = () => {
           </h4>
           <Typography>Strategy, Social Media</Typography>
         </VerticalTimelineElement>
-        <VerticalTimelineElement
-          iconStyle={{ background: "#1f1f1f", color: "#fff" }}
-          icon={<AcUnitIcon />}
-        />
+        
       </VerticalTimeline>
       {/* <div id="app" class="containerParallax">
         <card data-image="https://images.unsplash.com/photo-1479660656269-197ebb83b540?dpr=2&auto=compress,format&fit=crop&w=1199&h=798&q=80&cs=tinysrgb&crop=">

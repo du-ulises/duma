@@ -56,7 +56,7 @@
   color: #fff;
 }
 @media only screen and (min-width: 767px) {
-  .inner-header .menu {
+  .container {
     display: none;
   }
 }
@@ -110,7 +110,7 @@
   justify-content: space-between;
   align-items: center;
   position: relative;
-  top: 80px;
+  top: 100px;
 }
 .hamburger-menu .menu-layer .wrapper .menu-links nav {
   display: block;
@@ -118,6 +118,8 @@
 .hamburger-menu .menu-layer .wrapper .menu-links nav ul {
   margin: 0;
   padding: 0;
+  text-align: center;
+  width: 50%;
 }
 .hamburger-menu .menu-layer .wrapper .menu-links nav ul li {
   list-style: none;
@@ -126,9 +128,7 @@
   cursor: pointer;
   height: 4rem;
   overflow: hidden;
-  position: relative;
   width: 100%;
-  padding-left: 1rem;
 }
 .hamburger-menu .menu-layer .wrapper .menu-links nav ul li a {
   position: absolute;

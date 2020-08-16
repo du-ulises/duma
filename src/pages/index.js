@@ -22,7 +22,8 @@ import { Avatar, Tooltip, withStyles, Fade } from "@material-ui/core"
 import scrollToElement from "scroll-to-element"
 import ReactHowler from "react-howler"
 import soundMp3 from "../audio/sound.mp3"
-import Header from "../components/menu/components/Header";
+import Header from "../components/menu/components/Header"
+import Product from "../components/Product"
 
 const LightTooltip = withStyles(theme => ({
   tooltip: {
@@ -312,8 +313,8 @@ const IndexPage = props => {
       <Section>
         <Title
           style={{
-            fontFamily: "MADE Evolve Sans Medium EVO",
-            fontSize: 24,
+            fontFamily: "MADE Evolve Sans Bold EVO",
+            fontSize: "1.5rem",
             color: "#fff",
             //color: "#1779ff",
           }}
@@ -331,13 +332,12 @@ const IndexPage = props => {
         </div>
         <Grid container justify="center" alignItems="stretch" spacing={2}>
           <Grid item xs={12} md={6}>
-            <Typography style={{ color: "#fff", textAlign: "center" }}>
+            <Typography style={{ color: "#fff", textAlign: "center", fontFamily: "MADE Evolve Sans Medium" }}>
               My name is{" "}
               <div
                 style={{
                   color: "#1779ff",
                   display: "inline",
-                  textShadow: "0px 0px 10px rgba(255, 255, 255, 0.9)",
                 }}
               >
                 Diego Ulises Martínez Aguilar
@@ -348,8 +348,8 @@ const IndexPage = props => {
                 href="https://digitalignition.com.mx/en/home/"
                 target="_blank"
                 style={{
-                  color: "#fff",
-                  fontFamily: "Acrom Medium",
+                  color: "#1779ff",
+                  fontFamily: "MADE Evolve Sans Medium",
                 }}
               >
                 Digital Ignition
@@ -493,8 +493,8 @@ const IndexPage = props => {
       <Section>
         <Title
           style={{
-            fontFamily: "MADE Evolve Sans Medium EVO",
-            fontSize: 24,
+            fontFamily: "MADE Evolve Sans Bold EVO",
+            fontSize: "1.5rem",
             color: "#fff",
           }}
         >
@@ -522,8 +522,8 @@ const IndexPage = props => {
       <Section>
         <Title
           style={{
-            fontFamily: "MADE Evolve Sans Medium EVO",
-            fontSize: 24,
+            fontFamily: "MADE Evolve Sans Bold EVO",
+            fontSize: "1.5rem",
             color: "#fff",
           }}
         >
@@ -534,21 +534,22 @@ const IndexPage = props => {
       <Section>
         <Title
           style={{
-            fontFamily: "MADE Evolve Sans Medium EVO",
-            fontSize: 24,
+            fontFamily: "MADE Evolve Sans Bold EVO",
+            fontSize: "1.5rem",
             color: "#fff",
           }}
         >
           Experience
         </Title>
       </Section>
+      <Product />
+        <Experience />
       <a id="tech">Tech</a>
-
-      <Section>
+      <Section style={{marginTop: "-45px"}}>
         <Title
           style={{
-            fontFamily: "MADE Evolve Sans Medium EVO",
-            fontSize: 24,
+            fontFamily: "MADE Evolve Sans Bold EVO",
+            fontSize: "1.5rem",
             color: "#fff",
           }}
         >
@@ -560,21 +561,20 @@ const IndexPage = props => {
       <Section>
         <Title
           style={{
-            fontFamily: "MADE Evolve Sans Medium EVO",
-            fontSize: 24,
+            fontFamily: "MADE Evolve Sans Bold EVO",
+            fontSize: "1.5rem",
             color: "#fff",
           }}
         >
           Education
         </Title>
-        <Experience />
       </Section>
       <a id="contact">Contact</a>
       <Section>
         <Title
           style={{
-            fontFamily: "MADE Evolve Sans Medium EVO",
-            fontSize: 24,
+            fontFamily: "MADE Evolve Sans Bold EVO",
+            fontSize: "1.5rem",
             color: "#fff",
           }}
         >
@@ -584,7 +584,7 @@ const IndexPage = props => {
     </Content>
   )
 
-  const constraintsRef = useRef(null);
+  const constraintsRef = useRef(null)
 
   return (
     <>

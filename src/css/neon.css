@@ -67,13 +67,14 @@ body {
 /* NEON BUTTON */
 #neonButton {
   position: relative;
-  color: #4353ff;
+  color: #fff;
+  background: #1779ff;
   padding: 15px 30px;
   font-size: 15px;
   letter-spacing: 2px;
   text-transform: uppercase;
   text-decoration: none;
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 0 10px #1779ff, 0 0 40px #1779ff, 0 0 80px #1779ff;
   overflow: hidden;
   cursor: pointer;
   z-index: 1;
@@ -93,6 +94,7 @@ body {
   background: #1779ff;
   box-shadow: 0 0 10px #1779ff, 0 0 40px #1779ff, 0 0 80px #1779ff;
   transition-delay: 1s;
+  transform: scale(1.05);
 }
 
 #neonButton span:nth-child(1) {
@@ -101,7 +103,7 @@ body {
   right: 0;
   width: 100%;
   height: 2px;
-  background: linear-gradient(to right, transparent, #1779ff);
+  background: linear-gradient(to right, transparent, #fff);
   animation: animate1 2s linear infinite;
 }
 @keyframes animate1 {
@@ -122,7 +124,7 @@ body {
   right: 0;
   width: 2px;
   height: 100%;
-  background: linear-gradient(to right, transparent, #1779ff);
+  background: linear-gradient(to right, transparent, #fff);
   animation: animate2 2s linear infinite;
   animation-delay: 1s;
 }
@@ -145,7 +147,7 @@ body {
   right: 0;
   width: 100%;
   height: 2px;
-  background: linear-gradient(to right, transparent, #1779ff);
+  background: linear-gradient(to right, transparent, #fff);
   animation: animate3 2s linear infinite;
 }
 @keyframes animate3 {
@@ -167,7 +169,7 @@ body {
   left: 0;
   width: 2px;
   height: 100%;
-  background: linear-gradient(to top, transparent, #b4d3ff);
+  background: linear-gradient(to top, transparent, #fff);
   animation: animate4 2s linear infinite;
   animation-delay: 1s;
 }
@@ -1187,7 +1189,6 @@ h2 {
 .about .card p {
   z-index: 99;
   position: absolute;
-  top: 20px;
   right: 70px;
   color: #333;
   opacity: 0.7;
@@ -1196,6 +1197,8 @@ h2 {
   writing-mode: vertical-lr;
   -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
+  height: 100%;
+  text-align: center;
 }
 .about .card .pic {
   z-index: 100;

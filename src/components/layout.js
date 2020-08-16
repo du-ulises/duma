@@ -241,8 +241,8 @@ const Layout = ({ location, children, handleChange }) => {
                   </h1>
                   <div className="copyright">
                     <Typography style={{ color: "#fff" }}>
-                      © {new Date().getFullYear()}, By
-                      {` `}
+                      © {new Date().getFullYear()}, By Diego Ulises Martínez
+                      {/* {` `}
                       <a
                         href="https://www.gatsbyjs.org"
                         style={{
@@ -252,7 +252,7 @@ const Layout = ({ location, children, handleChange }) => {
                         }}
                       >
                         Diego Ulises Martínez
-                      </a>
+                      </a> */}
                     </Typography>
                   </div>
                   <div className="isometric">

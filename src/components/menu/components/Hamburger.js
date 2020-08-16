@@ -99,6 +99,7 @@ const Hamburger = ({ state, go }) => {
                         <a
                           style={{
                             fontFamily: "MADE Evolve Sans Bold EVO",
+                            textAlign: "center"
                           }}
                           onMouseEnter={e => {
                             handleHover(e)
@@ -118,6 +119,7 @@ const Hamburger = ({ state, go }) => {
                         <a
                           style={{
                             fontFamily: "MADE Evolve Sans Bold EVO",
+                            textAlign: "center"
                           }}
                           onMouseEnter={e => handleHover(e)}
                           onMouseOut={e => {
@@ -137,6 +139,7 @@ const Hamburger = ({ state, go }) => {
                         <a
                           style={{
                             fontFamily: "MADE Evolve Sans Bold EVO",
+                            textAlign: "center"
                           }}
                           onMouseEnter={e => handleHover(e)}
                           onMouseOut={e => {
@@ -156,6 +159,7 @@ const Hamburger = ({ state, go }) => {
                         <a
                           style={{
                             fontFamily: "MADE Evolve Sans Bold EVO",
+                            textAlign: "center"
                           }}
                           onMouseEnter={e => handleHover(e)}
                           onMouseOut={e => {
@@ -175,6 +179,7 @@ const Hamburger = ({ state, go }) => {
                         <a
                           style={{
                             fontFamily: "MADE Evolve Sans Bold EVO",
+                            textAlign: "center"
                           }}
                           onMouseEnter={e => handleHover(e)}
                           onMouseOut={e => {
@@ -194,6 +199,7 @@ const Hamburger = ({ state, go }) => {
                         <a
                           style={{
                             fontFamily: "MADE Evolve Sans Bold EVO",
+                            textAlign: "center"
                           }}
                           onMouseEnter={e => handleHover(e)}
                           onMouseOut={e => {
@@ -213,6 +219,7 @@ const Hamburger = ({ state, go }) => {
                         <a
                           style={{
                             fontFamily: "MADE Evolve Sans Bold EVO",
+                            textAlign: "center"
                           }}
                           onMouseEnter={e => handleHover(e)}
                           onMouseOut={e => {
