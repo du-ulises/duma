@@ -6,10 +6,10 @@
   z-index: 500;
   width: 100%;
 }
-
+/* 
 .container .wrapper {
-  /* padding: 0 48px; */
-}
+   padding: 0 48px; 
+} */
 
 .container .wrapper .home {
   display: flex;
@@ -165,9 +165,9 @@
   margin: 0 32px;
   transition: 0.3s ease-in-out;
 }
-.hamburger-menu .menu-layer .wrapper .locations span:first-child {
-  /* margin-left: 64px; */
-}
+/* .hamburger-menu .menu-layer .wrapper .locations span:first-child {
+   margin-left: 64px; 
+} */
 .hamburger-menu .menu-layer .wrapper .locations span:hover {
   color: #fff;
   background: #000;
