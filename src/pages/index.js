@@ -333,7 +333,13 @@ const IndexPage = props => {
         </div>
         <Grid container justify="center" alignItems="stretch" spacing={2}>
           <Grid item xs={12} md={6}>
-            <Typography style={{ color: "#fff", textAlign: "center", fontFamily: "MADE Evolve Sans Medium" }}>
+            <Typography
+              style={{
+                color: "#fff",
+                textAlign: "center",
+                fontFamily: "MADE Evolve Sans Medium",
+              }}
+            >
               My name is{" "}
               <div
                 style={{
@@ -544,9 +550,9 @@ const IndexPage = props => {
         </Title>
       </Section>
       <Product />
-        <Experience />
+      <Experience />
       <a id="tech">Tech</a>
-      <Section style={{marginTop: "-45px"}}>
+      <Section style={{ marginTop: "-45px" }}>
         <Title
           style={{
             fontFamily: "MADE Evolve Sans Bold EVO",
@@ -582,13 +588,17 @@ const IndexPage = props => {
           Contact
         </Title>
       </Section>
-      <Grid container justify="center">
+      <Grid
+        container
+        justify="center"
+        style={{ zIndex: 2, marginTop: "-4rem" }}
+      >
         <Grid item>
-        <a href={CV} download><Typography>Download CV</Typography></a>
+          <a href={CV} download>
+            <Typography style={{ color: "#fff" }}>Download CV</Typography>
+          </a>
         </Grid>
       </Grid>
-      
-      
     </Content>
   )
 
