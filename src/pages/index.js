@@ -317,6 +317,7 @@ const IndexPage = props => {
             fontFamily: "MADE Evolve Sans Bold EVO",
             fontSize: "1.5rem",
             color: "#fff",
+            zIndex: 2,
             //color: "#1779ff",
           }}
         >
@@ -338,6 +339,7 @@ const IndexPage = props => {
                 color: "#fff",
                 textAlign: "center",
                 fontFamily: "MADE Evolve Sans Medium",
+                zIndex: 2,
               }}
             >
               My name is{" "}
@@ -371,7 +373,7 @@ const IndexPage = props => {
           </Grid>
           <Grid item xs={12} md={6}>
             <div class="about">
-              <div class="card card2">
+              <div class="card card2" style={{ zIndex: 2 }}>
                 <h2
                   style={{
                     fontFamily: "MADE Evolve Sans Bold EVO",
@@ -503,6 +505,7 @@ const IndexPage = props => {
             fontFamily: "MADE Evolve Sans Bold EVO",
             fontSize: "1.5rem",
             color: "#fff",
+            zIndex: 2,
           }}
         >
           Work
@@ -532,6 +535,7 @@ const IndexPage = props => {
             fontFamily: "MADE Evolve Sans Bold EVO",
             fontSize: "1.5rem",
             color: "#fff",
+            zIndex: 2,
           }}
         >
           Services
@@ -544,6 +548,7 @@ const IndexPage = props => {
             fontFamily: "MADE Evolve Sans Bold EVO",
             fontSize: "1.5rem",
             color: "#fff",
+            zIndex: 2,
           }}
         >
           Experience
@@ -558,6 +563,7 @@ const IndexPage = props => {
             fontFamily: "MADE Evolve Sans Bold EVO",
             fontSize: "1.5rem",
             color: "#fff",
+            zIndex: 2,
           }}
         >
           Tech
@@ -571,6 +577,7 @@ const IndexPage = props => {
             fontFamily: "MADE Evolve Sans Bold EVO",
             fontSize: "1.5rem",
             color: "#fff",
+            zIndex: 2,
           }}
         >
           Education
@@ -583,6 +590,7 @@ const IndexPage = props => {
             fontFamily: "MADE Evolve Sans Bold EVO",
             fontSize: "1.5rem",
             color: "#fff",
+            zIndex: 2,
           }}
         >
           Contact
@@ -595,7 +603,9 @@ const IndexPage = props => {
       >
         <Grid item>
           <a href={CV} download>
-            <Typography style={{ color: "#fff" }}>Download CV</Typography>
+            <Typography style={{ color: "#fff", zIndex: 2 }}>
+              Download CV
+            </Typography>
           </a>
         </Grid>
       </Grid>
