@@ -352,7 +352,7 @@ const IndexPage = props => {
                 Diego Ulises Martínez Aguilar
               </div>
               , I'm a Frontend Web & Mobile Developer and UX / UI Designer,
-              currently working in a digital development agency,{" "}
+              currently working on a digital development agency,{" "}
               <a
                 href="https://digitalignition.com.mx/en/home/"
                 target="_blank"
@@ -365,9 +365,9 @@ const IndexPage = props => {
               </a>
               , as Android Coordinator in Morelia, Mich. <br />
               <br />
-              After more than 5 years as Computer Systems Engineering student I
+              After more than 5 years as a Computer Systems Engineering student, I
               have discovered a passion for programming and development. <br />
-              Since 2019 I've mostly been working on front-end web development
+              Since 2019, I've mostly been working on front-end web development
               and UX/UI Design.
             </Typography>
           </Grid>

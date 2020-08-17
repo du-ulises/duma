@@ -13,7 +13,7 @@ const state = {
       image: "/substance/R1.jpg",
       aspect: 0.665,
       text:
-        "Agenda Cave is a mobile application made to measure for The Cave Barbershop so customers can schedule an appointment for any of the services they offer.",
+        "Agenda Cave is a mobile application made tailored for The Cave Barbershop so customers can schedule an appointment for any of the services they offer.",
     },
     {
       offset: 2,
@@ -57,7 +57,7 @@ const state = {
       header: "Sistema de Control Escolar Maristas.",
       image: "/substance/Marista-01.jpg",
       aspect: 1.77,
-      text: "School Control System for the Marist University, is a management system dedicated to providing a communication bridge between teachers, students and career coordinators.",
+      text: "School Control System for the Marist University, is a management system dedicated to provide a communication bridge between teachers, students and career coordinators.",
     },
   ],
   stripes: [
