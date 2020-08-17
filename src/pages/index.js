@@ -24,6 +24,7 @@ import ReactHowler from "react-howler"
 import soundMp3 from "../audio/sound.mp3"
 import Header from "../components/menu/components/Header"
 import Product from "../components/Product"
+import CV from "../resources/CV-ISIC-MARTINEZ-AGUILAR-DIEGO-ULISES.pdf"
 
 const LightTooltip = withStyles(theme => ({
   tooltip: {
@@ -581,6 +582,13 @@ const IndexPage = props => {
           Contact
         </Title>
       </Section>
+      <Grid container justify="center">
+        <Grid item>
+        <a href={CV} download><Typography>Download CV</Typography></a>
+        </Grid>
+      </Grid>
+      
+      
     </Content>
   )
 

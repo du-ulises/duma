@@ -110,7 +110,7 @@
   justify-content: space-between;
   align-items: center;
   position: relative;
-  top: 100px;
+  top: 60px;
 }
 .hamburger-menu .menu-layer .wrapper .menu-links nav {
   display: block;
@@ -118,15 +118,13 @@
 .hamburger-menu .menu-layer .wrapper .menu-links nav ul {
   margin: 0;
   padding: 0;
-  text-align: center;
-  width: 50%;
 }
 .hamburger-menu .menu-layer .wrapper .menu-links nav ul li {
   list-style: none;
   font-size: 2rem;
   font-weight: 700;
   cursor: pointer;
-  height: 4rem;
+  height: 4.5rem;
   overflow: hidden;
   width: 100%;
 }
@@ -157,12 +155,12 @@
   margin-bottom: 0;
   font-size: 0.8rem;
   font-weight: 600;
-  text-align: end;
+  text-align: start;
 }
 .hamburger-menu .menu-layer .wrapper .locations span {
   cursor: pointer;
   font-weight: 400;
-  margin: 0 32px;
+  margin: 0 24px;
   transition: 0.3s ease-in-out;
 }
 /* .hamburger-menu .menu-layer .wrapper .locations span:first-child {
@@ -171,7 +169,7 @@
 .hamburger-menu .menu-layer .wrapper .locations span:hover {
   color: #fff;
   background: #000;
-  padding: 8px 24px;
+  padding: 8px 12px;
   border-radius: 4px;
 }
 

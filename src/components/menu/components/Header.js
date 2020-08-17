@@ -67,10 +67,7 @@ const Header = () => {
           </div>
         </div>
       </div>
-      <Hamburger
-        state={state}
-        go={go}
-      />
+      <Hamburger state={state} go={go} />
     </>
   )
 }

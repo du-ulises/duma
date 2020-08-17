@@ -1,6 +1,7 @@
 import React from "react"
 import { Typography } from "@material-ui/core"
-import AcUnitIcon from "@material-ui/icons/AcUnit"
+import { useStaticQuery, graphql } from "gatsby"
+import Img from "gatsby-image"
 
 import {
   VerticalTimeline,
@@ -11,14 +12,67 @@ import "react-vertical-timeline-component/style.min.css"
 import "../css/neon.css"
 
 const Experience = () => {
+  const images = useStaticQuery(graphql`
+    query {
+      di: file(relativePath: { eq: "companies/di.png" }) {
+        childImageSharp {
+          fluid(maxHeight: 200) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+      setenal: file(relativePath: { eq: "companies/setenal.png" }) {
+        childImageSharp {
+          fluid(maxHeight: 200) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+      espacioEmprendedor: file(
+        relativePath: { eq: "companies/espacioEmprendedor.png" }
+      ) {
+        childImageSharp {
+          fluid(maxHeight: 200) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+      cave: file(relativePath: { eq: "companies/cave.png" }) {
+        childImageSharp {
+          fluid(maxHeight: 200) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+      maristas: file(relativePath: { eq: "companies/maristas.png" }) {
+        childImageSharp {
+          fluid(maxHeight: 200) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+    }
+  `)
+
   return (
     <div>
       <VerticalTimeline>
-      <VerticalTimelineElement
+        <VerticalTimelineElement
           className="vertical-timeline-element--work"
-          date="2008 - 2010"
-          iconStyle={{ background: "#1f1f1f", color: "#fff" }}
-          icon={<AcUnitIcon />}
+          date="16 Dec. 2019 - Present"
+          iconStyle={{
+            background: "#1f1f1f",
+            alignItems: "center",
+            display: "grid",
+            color: "#fff",
+          }}
+          icon={
+            <Img
+              imgStyle={{ objectFit: "contain" }}
+              style={{ maxHeight: "80%" }}
+              fluid={images.di.childImageSharp.fluid}
+            />
+          }
         >
           <h3
             className="vertical-timeline-element-title"
@@ -30,15 +84,29 @@ const Experience = () => {
             className="vertical-timeline-element-subtitle"
             style={{ fontFamily: "MADE Evolve Sans Medium Evo" }}
           >
-            Los Angeles, CA
+            Multiple Development Projects.
           </h4>
-          <Typography>User Experience, Visual Design</Typography>
+          <Typography>
+            Frontend Development, User Experience, Visual Design, SEO, Online
+            Marketing.
+          </Typography>
         </VerticalTimelineElement>
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
-          date="2010 - 2011"
-          iconStyle={{ background: "#1f1f1f", color: "#fff" }}
-          icon={<AcUnitIcon />}
+          date="Jan. 2020 - Jun. 2019"
+          iconStyle={{
+            background: "#1f1f1f",
+            alignItems: "center",
+            display: "grid",
+            color: "#fff",
+          }}
+          icon={
+            <Img
+              imgStyle={{ objectFit: "contain" }}
+              style={{ maxHeight: "80%" }}
+              fluid={images.setenal.childImageSharp.fluid}
+            />
+          }
         >
           <h3
             className="vertical-timeline-element-title"
@@ -50,18 +118,28 @@ const Experience = () => {
             className="vertical-timeline-element-subtitle"
             style={{ fontFamily: "MADE Evolve Sans Medium Evo" }}
           >
-            San Francisco, CA
+            Intelligent Tire Management System (SIAN).
           </h4>
           <Typography>
-            Creative Direction, User Experience, Visual Design, SEO, Online
-            Marketing
+            Web Services (REST API) & Artificial Intelligence.
           </Typography>
         </VerticalTimelineElement>
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
-          date="2008 - 2010"
-          iconStyle={{ background: "#1f1f1f", color: "#fff" }}
-          icon={<AcUnitIcon />}
+          date="Aug. 2019 - Dec. 2020"
+          iconStyle={{
+            background: "#1f1f1f",
+            alignItems: "center",
+            display: "grid",
+            color: "#fff",
+          }}
+          icon={
+            <Img
+              imgStyle={{ objectFit: "contain" }}
+              style={{ maxHeight: "80%" }}
+              fluid={images.espacioEmprendedor.childImageSharp.fluid}
+            />
+          }
         >
           <h3
             className="vertical-timeline-element-title"
@@ -73,15 +151,29 @@ const Experience = () => {
             className="vertical-timeline-element-subtitle"
             style={{ fontFamily: "MADE Evolve Sans Medium Evo" }}
           >
-            Los Angeles, CA
+            Internal Control Systems.
           </h4>
-          <Typography>User Experience, Visual Design</Typography>
+          <Typography>
+            Automation, Data Analytics, User Experience, Planning and
+            Organization.
+          </Typography>
         </VerticalTimelineElement>
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
-          date="2006 - 2008"
-          iconStyle={{ background: "#1f1f1f", color: "#fff" }}
-          icon={<AcUnitIcon />}
+          date="Aug. 2019 - Dec. 2019"
+          iconStyle={{
+            background: "#1f1f1f",
+            alignItems: "center",
+            display: "grid",
+            color: "#fff",
+          }}
+          icon={
+            <Img
+              imgStyle={{ objectFit: "contain" }}
+              style={{ maxHeight: "80%" }}
+              fluid={images.cave.childImageSharp.fluid}
+            />
+          }
         >
           <h3
             className="vertical-timeline-element-title"
@@ -93,15 +185,28 @@ const Experience = () => {
             className="vertical-timeline-element-subtitle"
             style={{ fontFamily: "MADE Evolve Sans Medium Evo" }}
           >
-            San Francisco, CA
+            Agenda Cave.
           </h4>
-          <Typography>User Experience, Visual Design</Typography>
+          <Typography>
+            Cross-Platform Mobile Application & Software Architecture.
+          </Typography>
         </VerticalTimelineElement>
         <VerticalTimelineElement
           className="vertical-timeline-element--education"
-          date="April 2013"
-          iconStyle={{ background: "#1f1f1f", color: "#fff" }}
-          icon={<AcUnitIcon />}
+          date="Aug. 2018 - Dec. 2018"
+          iconStyle={{
+            background: "#1f1f1f",
+            alignItems: "center",
+            display: "grid",
+            color: "#fff",
+          }}
+          icon={
+            <Img
+              imgStyle={{ objectFit: "contain" }}
+              style={{ maxHeight: "90%" }}
+              fluid={images.maristas.childImageSharp.fluid}
+            />
+          }
         >
           <h3
             className="vertical-timeline-element-title"
@@ -113,45 +218,11 @@ const Experience = () => {
             className="vertical-timeline-element-subtitle"
             style={{ fontFamily: "MADE Evolve Sans Medium Evo" }}
           >
-            Online Course
+            School Control System.
           </h4>
-          <Typography>Strategy, Social Media</Typography>
+          <Typography>Secure software life cycle.</Typography>
         </VerticalTimelineElement>
-        
       </VerticalTimeline>
-      {/* <div id="app" class="containerParallax">
-        <card data-image="https://images.unsplash.com/photo-1479660656269-197ebb83b540?dpr=2&auto=compress,format&fit=crop&w=1199&h=798&q=80&cs=tinysrgb&crop=">
-          <h1 slot="header">Digital Ignition</h1>
-          <p slot="content">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-          </p>
-        </card>
-        <card data-image="https://images.unsplash.com/photo-1479659929431-4342107adfc1?dpr=2&auto=compress,format&fit=crop&w=1199&h=799&q=80&cs=tinysrgb&crop=">
-          <h1 slot="header">SETENAL</h1>
-          <p slot="content">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-          </p>
-        </card>
-        <card data-image="https://images.unsplash.com/photo-1479644025832-60dabb8be2a1?dpr=2&auto=compress,format&fit=crop&w=1199&h=799&q=80&cs=tinysrgb&crop=">
-          <h1 slot="header">Espacio Emprendedor</h1>
-          <p slot="content">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-          </p>
-        </card>
-        <card data-image="https://images.unsplash.com/photo-1479621051492-5a6f9bd9e51a?dpr=2&auto=compress,format&fit=crop&w=1199&h=811&q=80&cs=tinysrgb&crop=">
-          <h1 slot="header">The Cave Barbershop</h1>
-          <p slot="content">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-          </p>
-        </card>
-        <card data-image="https://images.unsplash.com/photo-1479621051492-5a6f9bd9e51a?dpr=2&auto=compress,format&fit=crop&w=1199&h=811&q=80&cs=tinysrgb&crop=">
-          <h1 slot="header">Universidad Marista Valladolid</h1>
-          <p slot="content">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-          </p>
-        </card>
-      </div>
-     */}
     </div>
   )
 }

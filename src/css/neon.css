@@ -1071,6 +1071,12 @@ li span.active::before {
   color: #fff !important;
   opacity: 1 !important;
 }
+@media only screen and (max-width: 680px) {
+  .vertical-timeline-element-date {
+    color: #000 !important;
+  }
+}
+vertical-timeline-element-date
 
 .vertical-timeline--two-columns
   .vertical-timeline-element-content
