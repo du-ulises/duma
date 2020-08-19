@@ -100,3 +100,34 @@ export const handleCityReturn = target => {
     skewY: 0
   });
 };
+
+// adds city image once you hover on
+export const handleCityContact = (city, target) => {
+  gsap.to(target, {
+    duration: 0,
+    background: `url(${city}) center center`
+  });
+  gsap.to(target, {
+    duration: 0.4,
+    opacity: 1,
+    ease: "power3.inOut"
+  });
+  gsap.from(target, {
+    duration: 0.4,
+    skewY: 2,
+    transformOrigin: "right top"
+  });
+};
+
+// Removes the city image once you hover off
+export const handleCityContactReturn = target => {
+  gsap.to(target, {
+    duration: 0,
+    skewY: 0
+  });
+  gsap.to(target, {
+    duration: 0.4,
+    opacity: 0,
+    skewY: 0
+  });
+};

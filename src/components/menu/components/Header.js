@@ -45,9 +45,8 @@ const Header = () => {
   }
   const go = () => {
     setState({
-      initial: false,
       clicked: !state.clicked,
-      menuName: "Close",
+      menuName: "Menu",
     })
   }
 

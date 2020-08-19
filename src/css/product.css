@@ -137,11 +137,11 @@
 }
 
 .product .product-slide-enlarge .background {
-  position: fixed;
-  height: 350px;
+  position: absolute;
+  height: 550px;
   width: 100%;
   background: #4353ff;
-  top: 0;
+  top: -100px;
   left: 0;
   bottom: 0;
   z-index: 0;
@@ -155,9 +155,9 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  position: fixed;
+  position: absolute;
   z-index: 22;
-  top: 0;
+  top: -175px;
   padding: 24px 32px;
   opacity: 0;
   margin-top: 80px;

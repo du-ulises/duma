@@ -24,7 +24,7 @@ import ReactHowler from "react-howler"
 import soundMp3 from "../audio/sound.mp3"
 import Header from "../components/menu/components/Header"
 import Product from "../components/Product"
-import CV from "../resources/CV-ISIC-MARTINEZ-AGUILAR-DIEGO-ULISES.pdf"
+import Contact from "../components/contact"
 
 const LightTooltip = withStyles(theme => ({
   tooltip: {
@@ -365,8 +365,9 @@ const IndexPage = props => {
               </a>
               , as Android Coordinator in Morelia, Mich. <br />
               <br />
-              After more than 5 years as a Computer Systems Engineering student, I
-              have discovered a passion for programming and development. <br />
+              After more than 5 years as a Computer Systems Engineering student,
+              I have discovered a passion for programming and development.{" "}
+              <br />
               Since 2019, I've mostly been working on front-end web development
               and UX/UI Design.
             </Typography>
@@ -528,6 +529,15 @@ const IndexPage = props => {
           </Link>
         </Flex>
       </Section>
+      <h3
+        style={{
+          fontFamily: "MADE Evolve Sans Regular",
+          color: "#fff",
+          textAlign: "center",
+        }}
+      >
+        Creative that speaks. Data to prove it.
+      </h3>
       <a id="services">Services</a>
       <Section>
         <Title
@@ -583,6 +593,24 @@ const IndexPage = props => {
           Education
         </Title>
       </Section>
+      <h3 className="whiteText" style={{ marginTop: "-3rem" }}>
+        Computer Systems Engineering specialized in Software Engineering and
+        Mobile Application Development.
+      </h3>
+      <h4 className="blueText">
+        Instituto Tecnológico de Morelia (Aug. 2015 - Present).
+      </h4>
+      <h3 className="whiteText">Development and Engineering Online Courses.</h3>
+      <h4 className="blueText">Platzi (Jan. 2019 - Nov. 2019).</h4>
+      <h3 className="whiteText">Entrepreneur Psychology Workshop.</h3>
+      <h4 className="blueText">Facultad de Psicología de la UMSNH / Instituto Tecnológico de Morelia (Oct. 2018).</h4>
+      <h3 className="whiteText">Technician In Support And Maintenance Of Computer Equipment, Physical-Mathematical Baccalaureate.</h3>
+      <h4 className="blueText">Colegio de Estudios Científicos Y Tecnológicos del Estado de Michoacán (2012 - 2015).</h4>
+      <h3 className="whiteText">Administrative Computer Designer and Microcomputer Operation.</h3>
+      <h4 className="blueText">CPI Capacitación Profesional en Informática, S.C. (2013 - 2015).</h4>
+
+
+      
       <a id="contact">Contact</a>
       <Section>
         <Title
@@ -596,19 +624,7 @@ const IndexPage = props => {
           Contact
         </Title>
       </Section>
-      <Grid
-        container
-        justify="center"
-        style={{ zIndex: 2, marginTop: "-4rem" }}
-      >
-        <Grid item>
-          <a href={CV} download>
-            <Typography style={{ color: "#fff", zIndex: 2 }}>
-              Download CV
-            </Typography>
-          </a>
-        </Grid>
-      </Grid>
+      <Contact />
     </Content>
   )
 

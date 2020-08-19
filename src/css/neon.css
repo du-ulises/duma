@@ -15,6 +15,7 @@ html {
   width: 10px;
   height: 100%;
   background: rgba(255, 255, 255, 0.05);
+  z-index: 10;
 }
 #progressbar {
   position: fixed;
@@ -24,6 +25,7 @@ html {
   background: linear-gradient(to top, #000, #1779ff);
   background-size: 400% 400%;
   animation: animate 5s ease-out infinite;
+  z-index: 10;
 }
 
 @keyframes animate {
@@ -875,6 +877,8 @@ li span.active::before {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 900px;
+  z-index: 1;
 }
 #text {
   text-align: center;
@@ -1071,7 +1075,7 @@ li span.active::before {
   color: #fff !important;
   opacity: 1 !important;
 }
-@media only screen and (max-width: 680px) {
+@media only screen and (max-width: 1169px) {
   .vertical-timeline-element-date {
     color: #000 !important;
   }
@@ -1518,4 +1522,14 @@ h2 {
   border-radius: 30px;
   top: calc(50% - 150px);
   left: calc(50% - 150px);
+}
+
+.blueText {
+  font-family: "MADE Evolve Sans Regular";
+  color: #1779ff;
+  margin-bottom: 1rem;
+}
+.whiteText {
+  font-family: "MADE Evolve Sans Regular";
+  color: #fff;
 }

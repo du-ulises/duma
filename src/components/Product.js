@@ -49,7 +49,7 @@ const Product = () => {
   }
   return (
     <div className="product">
-      <div className="product-inner">
+      <div className="product-inner" style={{marginTop: state ? "20px" : "-20px"}}>
         <div className="product-content">
           <motion.div
             style={{ translateY: up }}
