@@ -376,8 +376,8 @@ const IndexPage = props => {
             </Typography>
           </Grid>
           <Grid item xs={12} md={6}>
-            <div class="about">
-              <div class="card card2" style={{ zIndex: 2 }}>
+            <div className="about">
+              <div className="card card2" style={{ zIndex: 2 }}>
                 <h2
                   style={{
                     fontFamily: "MADE Evolve Sans Bold EVO",
@@ -385,11 +385,11 @@ const IndexPage = props => {
                 >
                   DUMA
                 </h2>
-                <i class="fas fa-arrow-right"></i>
+                <i className="fas fa-arrow-right"></i>
                 <p style={{
                     fontFamily: "MADE Evolve Sans Thin EVO",
                   }}>Let's work together.</p>
-                <div class="pic"></div>
+                <div className="pic"></div>
                 <ul>
                   <li></li>
                   <li></li>
@@ -415,8 +415,8 @@ const IndexPage = props => {
                   <li></li>
                   <li></li>
                 </ul>
-                <div class="social">
-                  <i class="fab fa-facebook-f">
+                <div className="social">
+                  <i className="fab fa-facebook-f">
                     <OutboundLink
                       href="https://www.facebook.com/diegoulises.martinezaguilar.1"
                       target="_blank"
@@ -437,7 +437,7 @@ const IndexPage = props => {
                       </LightTooltip>
                     </OutboundLink>
                   </i>
-                  <i class="fab fa-twitter">
+                  <i className="fab fa-twitter">
                     <OutboundLink
                       href="https://twitter.com/DiegoUlisesMtz"
                       target="_blank"
@@ -458,7 +458,7 @@ const IndexPage = props => {
                       </LightTooltip>
                     </OutboundLink>
                   </i>
-                  <i class="fab fa-instagram">
+                  <i className="fab fa-instagram">
                     <OutboundLink
                       href="https://www.instagram.com/diego.ulisess/"
                       target="_blank"

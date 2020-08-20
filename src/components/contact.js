@@ -77,26 +77,11 @@ const Experience = () => {
                 flexDirection="column"
                 style={{ position: "relative" }}
               >
-                <a
+                <OutboundLink
                   href={CV}
                   download
                   id="neonButton"
-                  onClick={e => {
-                    // To stop the page reloading
-                    e.preventDefault()
-                    // Lets track that custom click
-                    trackCustomEvent({
-                      // string - required - The object that was interacted with (e.g.video)
-                      category: "Curriculum Vitae",
-                      // string - required - Type of interaction (e.g. 'play')
-                      action: "Downloaded",
-                      // string - optional - Useful for categorizing events (e.g. 'Spring Campaign')
-                      label: "Download CV",
-                      // number - optional - Numeric value associated with the event. (e.g. A product ID)
-                      //value: 43,
-                    })
-                    //... Other logic here
-                  }}
+                  target="_blank"
                 >
                   <Typography
                     style={{
@@ -111,7 +96,7 @@ const Experience = () => {
                     <span></span>
                     Download CV
                   </Typography>
-                </a>
+                </OutboundLink>
               </Flex>
 
               <h1
@@ -138,6 +123,7 @@ const Experience = () => {
                     fontFamily: "MADE Evolve Sans Medium",
                     display: "inline",
                   }}
+                  target="_blank"
                 >
                   Nikita Pashkov
                 </OutboundLink>
@@ -151,7 +137,7 @@ const Experience = () => {
               >
                 FOLLOW ME.
               </h3>
-              <div class="follow">
+              <div className="follow">
                 <OutboundLink
                   href="www.linkedin.com/in/diegoulises"
                   target="_blank"
