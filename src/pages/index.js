@@ -25,6 +25,7 @@ import soundMp3 from "../audio/sound.mp3"
 import Header from "../components/menu/components/Header"
 import Product from "../components/Product"
 import Contact from "../components/contact"
+import Services from "../components/services"
 
 const LightTooltip = withStyles(theme => ({
   tooltip: {
@@ -338,7 +339,7 @@ const IndexPage = props => {
               style={{
                 color: "#fff",
                 textAlign: "center",
-                fontFamily: "MADE Evolve Sans Medium",
+                fontFamily: "MADE Evolve Sans Medium Evo",
                 zIndex: 2,
               }}
             >
@@ -358,7 +359,7 @@ const IndexPage = props => {
                 target="_blank"
                 style={{
                   color: "#1779ff",
-                  fontFamily: "MADE Evolve Sans Medium",
+                  fontFamily: "MADE Evolve Sans Medium Evo",
                 }}
               >
                 Digital Ignition
@@ -383,7 +384,9 @@ const IndexPage = props => {
                   DUMA
                 </h2>
                 <i class="fas fa-arrow-right"></i>
-                <p>Let's work together.</p>
+                <p style={{
+                    fontFamily: "MADE Evolve Sans Thin EVO",
+                  }}>Let's work together.</p>
                 <div class="pic"></div>
                 <ul>
                   <li></li>
@@ -474,24 +477,6 @@ const IndexPage = props => {
                       </LightTooltip>
                     </a>
                   </i>
-                  {/* <i class="fab fa-github">
-                    <a href="https://github.com/Diego-Ulises" target="_blank">
-                      <LightTooltip
-                        title="Github"
-                        placement="bottom"
-                        TransitionComponent={Fade}
-                      >
-                        <Avatar
-                          style={{
-                            color: "#fff",
-                            backgroundColor: "transparent",
-                          }}
-                        >
-                          <GitHubIcon fontSize="small" />
-                        </Avatar>
-                      </LightTooltip>
-                    </a>
-                  </i> */}
                 </div>
                 <button></button>
               </div>
@@ -531,7 +516,7 @@ const IndexPage = props => {
       </Section>
       <h3
         style={{
-          fontFamily: "MADE Evolve Sans Regular",
+          fontFamily: "MADE Evolve Sans Regular Evo",
           color: "#fff",
           textAlign: "center",
         }}
@@ -551,6 +536,8 @@ const IndexPage = props => {
           Services
         </Title>
       </Section>
+
+      <Services/>
       <a id="experience">Experience</a>
       <Section>
         <Title
@@ -600,17 +587,30 @@ const IndexPage = props => {
       <h4 className="blueText">
         Instituto Tecnológico de Morelia (Aug. 2015 - Present).
       </h4>
+      <h3 className="whiteText">English Courses, Level B1.</h3>
+      <h4 className="blueText">Coordinación de Lenguas Extranjeras del ITMorelia (Jan. 2017 - Jun. 2020).</h4>
       <h3 className="whiteText">Development and Engineering Online Courses.</h3>
       <h4 className="blueText">Platzi (Jan. 2019 - Nov. 2019).</h4>
       <h3 className="whiteText">Entrepreneur Psychology Workshop.</h3>
-      <h4 className="blueText">Facultad de Psicología de la UMSNH / Instituto Tecnológico de Morelia (Oct. 2018).</h4>
-      <h3 className="whiteText">Technician In Support And Maintenance Of Computer Equipment, Physical-Mathematical Baccalaureate.</h3>
-      <h4 className="blueText">Colegio de Estudios Científicos Y Tecnológicos del Estado de Michoacán (2012 - 2015).</h4>
-      <h3 className="whiteText">Administrative Computer Designer and Microcomputer Operation.</h3>
-      <h4 className="blueText">CPI Capacitación Profesional en Informática, S.C. (2013 - 2015).</h4>
+      <h4 className="blueText">
+        Facultad de Psicología de la UMSNH / Instituto Tecnológico de Morelia
+        (Oct. 2018).
+      </h4>
+      <h3 className="whiteText">
+        Technician In Support And Maintenance Of Computer Equipment,
+        Physical-Mathematical Baccalaureate.
+      </h3>
+      <h4 className="blueText">
+        Colegio de Estudios Científicos Y Tecnológicos del Estado de Michoacán
+        (2012 - 2015).
+      </h4>
+      <h3 className="whiteText">
+        Administrative Computer Designer and Microcomputer Operation.
+      </h3>
+      <h4 className="blueText">
+        CPI Capacitación Profesional en Informática, S.C. (2013 - 2015).
+      </h4>
 
-
-      
       <a id="contact">Contact</a>
       <Section>
         <Title

@@ -1081,8 +1081,7 @@ li span.active::before {
   }
 }
 vertical-timeline-element-date
-
-.vertical-timeline--two-columns
+  .vertical-timeline--two-columns
   .vertical-timeline-element-content
   .vertical-timeline-element-date {
   text-align: justify;
@@ -1532,4 +1531,23 @@ h2 {
 .whiteText {
   font-family: "MADE Evolve Sans Regular";
   color: #fff;
+}
+
+.titleServices {
+  font-family: "MADE Evolve Sans Regular";
+  color: #1779ff;
+}
+.itemServices {
+  font-family: "MADE Evolve Sans Regular";
+  color: #fff;
+}
+#skillSet {
+  text-align: center;
+  font-family: "MADE Evolve Sans Bold Evo";
+  color: #1779ff99;
+  font-size: 4rem;
+  margin-top: -30px;
+}
+.bullet {
+  color: #1779ff
 }
