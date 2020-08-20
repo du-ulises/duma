@@ -386,9 +386,13 @@ const IndexPage = props => {
                   DUMA
                 </h2>
                 <i className="fas fa-arrow-right"></i>
-                <p style={{
+                <p
+                  style={{
                     fontFamily: "MADE Evolve Sans Thin EVO",
-                  }}>Let's work together.</p>
+                  }}
+                >
+                  Let's work together.
+                </p>
                 <div className="pic"></div>
                 <ul>
                   <li></li>
@@ -539,7 +543,7 @@ const IndexPage = props => {
         </Title>
       </Section>
 
-      <Services/>
+      <Services />
       <a id="experience">Experience</a>
       <Section>
         <Title
@@ -582,37 +586,43 @@ const IndexPage = props => {
           Education
         </Title>
       </Section>
-      <h3 className="whiteText" style={{ marginTop: "-3rem" }}>
-        Computer Systems Engineering specialized in Software Engineering and
-        Mobile Application Development.
-      </h3>
-      <h4 className="blueText">
-        Instituto Tecnológico de Morelia (Aug. 2015 - Present).
-      </h4>
-      <h3 className="whiteText">English Courses, Level B1.</h3>
-      <h4 className="blueText">Coordinación de Lenguas Extranjeras del ITMorelia (Jan. 2017 - Jun. 2020).</h4>
-      <h3 className="whiteText">Development and Engineering Online Courses.</h3>
-      <h4 className="blueText">Platzi (Jan. 2019 - Nov. 2019).</h4>
-      <h3 className="whiteText">Entrepreneur Psychology Workshop.</h3>
-      <h4 className="blueText">
-        Facultad de Psicología de la UMSNH / Instituto Tecnológico de Morelia
-        (Oct. 2018).
-      </h4>
-      <h3 className="whiteText">
-        Technician In Support And Maintenance Of Computer Equipment,
-        Physical-Mathematical Baccalaureate.
-      </h3>
-      <h4 className="blueText">
-        Colegio de Estudios Científicos Y Tecnológicos del Estado de Michoacán
-        (2012 - 2015).
-      </h4>
-      <h3 className="whiteText">
-        Administrative Computer Designer and Microcomputer Operation.
-      </h3>
-      <h4 className="blueText">
-        CPI Capacitación Profesional en Informática, S.C. (2013 - 2015).
-      </h4>
-
+      <div className="edu">
+        <Typography className="whiteText" style={{ marginTop: "-3rem" }}>
+          Computer Systems Engineering specialized in Software Engineering and
+          Mobile Application Development.
+        </Typography>
+        <Typography className="blueText">
+          Instituto Tecnológico de Morelia (Aug. 2015 - Present).
+        </Typography>
+        <Typography className="whiteText">English Courses, Level B1.</Typography>
+        <Typography className="blueText">
+          Coordinación de Lenguas Extranjeras del ITMorelia (Jan. 2017 - Jun.
+          2020).
+        </Typography>
+        <Typography className="whiteText">
+          Development and Engineering Online Courses.
+        </Typography>
+        <Typography className="blueText">Platzi (Jan. 2019 - Nov. 2019).</Typography>
+        <Typography className="whiteText">Entrepreneur Psychology Workshop.</Typography>
+        <Typography className="blueText">
+          Facultad de Psicología de la UMSNH / Instituto Tecnológico de Morelia
+          (Oct. 2018).
+        </Typography>
+        <Typography className="whiteText">
+          Technician In Support And Maintenance Of Computer Equipment,
+          Physical-Mathematical Baccalaureate.
+        </Typography>
+        <Typography className="blueText">
+          Colegio de Estudios Científicos Y Tecnológicos del Estado de Michoacán
+          (2012 - 2015).
+        </Typography>
+        <Typography className="whiteText">
+          Administrative Computer Designer and Microcomputer Operation.
+        </Typography>
+        <Typography className="blueText">
+          CPI Capacitación Profesional en Informática, S.C. (2013 - 2015).
+        </Typography>
+      </div>
       <a id="contact">Contact</a>
       <Section>
         <Title

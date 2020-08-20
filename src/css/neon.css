@@ -1522,23 +1522,24 @@ h2 {
   top: calc(50% - 150px);
   left: calc(50% - 150px);
 }
-
+.edu {
+  font-family: "MADE Evolve Sans Regular" !important;
+  color: #fff;
+}
 .blueText {
-  font-family: "MADE Evolve Sans Regular";
   color: #1779ff;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem !important;
 }
 .whiteText {
-  font-family: "MADE Evolve Sans Regular";
   color: #fff;
 }
 
 .titleServices {
-  font-family: "MADE Evolve Sans Regular";
   color: #1779ff;
+  font-size: 1.2rem;
 }
 .itemServices {
-  font-family: "MADE Evolve Sans Regular";
+  font-family: "MADE Evolve Sans Regular" !important;
   color: #fff;
 }
 #skillSet {

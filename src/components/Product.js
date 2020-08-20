@@ -44,29 +44,22 @@ const Product = () => {
   }
   return (
     <div className="product">
-      <div className="product-inner" style={{marginTop: state ? "20px" : "-20px"}}>
+      <div
+        className="product-inner"
+        style={{ marginTop: state ? "20px" : "-20px" }}
+      >
         <div className="product-content">
           <motion.div
             style={{ translateY: up }}
             className="product-content-inner"
           >
-            <h4
-              style={{
-                fontFamily: "MADE Evolve Sans Regular",
-                color: "#1779ff",
-              }}
-            >
+            <Typography className="subtitleBoost">
               WE ARE DIGITAL IGNITION, OUR MISSION:
-            </h4>
-            <h2>BOOST YOUR BRAND</h2>
-            <h4
-              style={{
-                fontFamily: "MADE Evolve Sans Regular",
-                color: "#1779ff",
-              }}
-            >
+            </Typography>
+            <Typography className="boostYourBrand">BOOST YOUR BRAND</Typography>
+            <Typography className="subtitleBoost">
               WE ARE FUN PEOPLE THAT MAKES SERIOUS STUFF
-            </h4>
+            </Typography>
           </motion.div>
         </div>
       </div>

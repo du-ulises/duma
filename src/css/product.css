@@ -92,18 +92,22 @@
 .product .product-inner .product-content {
   /* padding: 72px 0 24px; */
   color: #fff;
-  font-family: "MADE Evolve Sans Regular EVO";
 }
-
-.product .product-inner .product-content .product-content-inner h4 {
-  margin: 0 0 16px 0;
-  line-height: 1;
-}
-
-.product .product-inner .product-content .product-content-inner h1 {
+.boostYourBrand {
   font-weight: 700;
   margin: 0 0 24px 0;
+  font-family: "MADE Evolve Sans Regular EVO" !important;
+  font-size: 1.6rem !important;
+}
+.subtitleBoost {
+  color: #1779ff;
+  font-size: 1.15rem !important;
+}
+
+.product .product-inner .product-content .product-content-inner {
+  margin: 0 0 16px 0;
   line-height: 1;
+  font-family: "MADE Evolve Sans Regular" !important;
 }
 
 .product .product-inner .product-content .product-content-inner .btn-row {

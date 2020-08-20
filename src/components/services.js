@@ -18,8 +18,8 @@ const Services = () => {
       </Grid>
 
       <Grid item xs={12} sm={3}>
-        <Typography>
-          <h3 className="titleServices">SOLUTIONS</h3>
+        <Typography className="titleServices">
+          SOLUTIONS
         </Typography>
         <Typography>
           <span className="bullet">° </span>Web Applications
@@ -53,8 +53,8 @@ const Services = () => {
         </Typography>
       </Grid>
       <Grid item xs={12} sm={6}>
-        <Typography>
-          <h3 className="titleServices">STACK</h3>
+        <Typography className="titleServices">
+          STACK
         </Typography>
         <Typography>
           <span className="bullet">° </span>HTML, CSS, Javascript
@@ -128,8 +128,8 @@ const Services = () => {
           <span className="bullet">.</span>
         </Typography>
 
-        <Typography>
-          <h3 className="titleServices">INTERESTED IN</h3>
+        <Typography className="titleServices">
+          INTERESTED IN
         </Typography>
         <Typography>
           <span className="bullet">° </span>
@@ -138,18 +138,18 @@ const Services = () => {
         </Typography>
         <Typography>
           <span className="bullet">° </span>
-          Browser Optimization Techniques (Caching, Lazy loading, etc.)
+          Browser Optimization Techniques (Caching, Lazy loading)
           <span className="bullet">.</span>
         </Typography>
         <Typography>
           <span className="bullet">° </span>
-          Testing (Unit, E2E, etc.)
+          Testing (Unit, E2E)
           <span className="bullet">.</span>
         </Typography>
       </Grid>
       <Grid item xs={12} sm={3}>
-        <Typography>
-          <h3 className="titleServices">FEATURES</h3>
+        <Typography className="titleServices">
+          FEATURES
         </Typography>
         <Typography>
           <span className="bullet">° </span>Personality
