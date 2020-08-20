@@ -27,6 +27,8 @@ import Product from "../components/Product"
 import Contact from "../components/contact"
 import Services from "../components/services"
 
+import { OutboundLink } from "gatsby-plugin-google-analytics"
+
 const LightTooltip = withStyles(theme => ({
   tooltip: {
     backgroundColor: "#1779ff",
@@ -415,7 +417,7 @@ const IndexPage = props => {
                 </ul>
                 <div class="social">
                   <i class="fab fa-facebook-f">
-                    <a
+                    <OutboundLink
                       href="https://www.facebook.com/diegoulises.martinezaguilar.1"
                       target="_blank"
                     >
@@ -433,10 +435,10 @@ const IndexPage = props => {
                           <FacebookIcon fontSize="small" />
                         </Avatar>
                       </LightTooltip>
-                    </a>
+                    </OutboundLink>
                   </i>
                   <i class="fab fa-twitter">
-                    <a
+                    <OutboundLink
                       href="https://twitter.com/DiegoUlisesMtz"
                       target="_blank"
                     >
@@ -454,10 +456,10 @@ const IndexPage = props => {
                           <TwitterIcon fontSize="small" />
                         </Avatar>
                       </LightTooltip>
-                    </a>
+                    </OutboundLink>
                   </i>
                   <i class="fab fa-instagram">
-                    <a
+                    <OutboundLink
                       href="https://www.instagram.com/diego.ulisess/"
                       target="_blank"
                     >
@@ -475,7 +477,7 @@ const IndexPage = props => {
                           <InstagramIcon fontSize="small" />
                         </Avatar>
                       </LightTooltip>
-                    </a>
+                    </OutboundLink>
                   </i>
                 </div>
                 <button></button>
@@ -521,7 +523,7 @@ const IndexPage = props => {
           textAlign: "center",
         }}
       >
-        Creative that speaks. Data to prove it.
+        Creativity that speaks. Data to prove it.
       </h3>
       <a id="services">Services</a>
       <Section>
@@ -659,7 +661,7 @@ const IndexPage = props => {
       />
       <Header />
       <Layout location={props.location}>
-        <SEO title="Home" />
+        <SEO title="HOME" />
         <div id="progressbar"></div>
         <div id="scrollPath"></div>
         <NavBar

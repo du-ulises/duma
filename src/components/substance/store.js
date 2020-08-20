@@ -13,7 +13,7 @@ const state = {
       image: "/substance/R1.jpg",
       aspect: 0.665,
       text:
-        "Agenda Cave is a mobile application made tailored for The Cave Barbershop so customers can schedule an appointment for any of the services they offer.",
+        "Agenda Cave is a mobile application tailored for The Cave Barbershop so customers can schedule an appointment for any of the services they offer.",
     },
     {
       offset: 2,

@@ -1,24 +1,13 @@
 import React, { useRef, useEffect } from "react"
 import { Typography, Grid } from "@material-ui/core"
-import { useStaticQuery, graphql } from "gatsby"
-import Img from "gatsby-image"
-
 import { Flex } from "grid-styled"
 
 import "../css/neon.css"
 import "../css/contact.css"
 
-import { gsap } from "gsap"
-
 import {
-  staggerText,
-  staggerReveal,
-  fadeInUp,
-  handleHover,
-  handleHoverExit,
   handleCityContactReturn,
   handleCityContact,
-  staggerRevealClose,
 } from "./menu/components/Animations"
 
 import CV from "../resources/CV-ISIC-MARTINEZ-AGUILAR-DIEGO-ULISES.pdf"
@@ -36,6 +25,9 @@ import WhatsAppIcon from "@material-ui/icons/WhatsApp"
 import MailOutlineIcon from "@material-ui/icons/MailOutline"
 import LocationOnIcon from "@material-ui/icons/LocationOn"
 import { Avatar, Tooltip, withStyles, Fade } from "@material-ui/core"
+
+import { OutboundLink } from "gatsby-plugin-google-analytics"
+import { trackCustomEvent } from "gatsby-plugin-google-analytics"
 
 const LightTooltip = withStyles(theme => ({
   tooltip: {
@@ -56,19 +48,6 @@ const cities = [
 ]
 
 const Experience = () => {
-  const images = useStaticQuery(graphql`
-    query {
-      deer: file(relativePath: { eq: "Deer.png" }) {
-        childImageSharp {
-          fluid(maxHeight: 200) {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
-    }
-  `)
-  let menuLayer = useRef(null)
-  let reveal1 = useRef(null)
   let reveal2 = useRef(null)
   let cityBackground = useRef(null)
 
@@ -98,7 +77,27 @@ const Experience = () => {
                 flexDirection="column"
                 style={{ position: "relative" }}
               >
-                <a href={CV} download id="neonButton">
+                <a
+                  href={CV}
+                  download
+                  id="neonButton"
+                  onClick={e => {
+                    // To stop the page reloading
+                    e.preventDefault()
+                    // Lets track that custom click
+                    trackCustomEvent({
+                      // string - required - The object that was interacted with (e.g.video)
+                      category: "Curriculum Vitae",
+                      // string - required - Type of interaction (e.g. 'play')
+                      action: "Downloaded",
+                      // string - optional - Useful for categorizing events (e.g. 'Spring Campaign')
+                      label: "Download CV",
+                      // number - optional - Numeric value associated with the event. (e.g. A product ID)
+                      //value: 43,
+                    })
+                    //... Other logic here
+                  }}
+                >
                   <Typography
                     style={{
                       color: "#fff",
@@ -132,16 +131,16 @@ const Experience = () => {
                 }}
               >
                 Original background music "Blue" & "Tides of time" by{" "}
-                <a
+                <OutboundLink
                   href="https://nickpashkov.com/"
-                  target="_blank"
                   style={{
                     color: "#1779ff",
                     fontFamily: "MADE Evolve Sans Medium",
+                    display: "inline",
                   }}
                 >
                   Nikita Pashkov
-                </a>
+                </OutboundLink>
               </h5>
               <h3
                 style={{
@@ -153,7 +152,10 @@ const Experience = () => {
                 FOLLOW ME.
               </h3>
               <div class="follow">
-                <a href="www.linkedin.com/in/diegoulises" target="_blank">
+                <OutboundLink
+                  href="www.linkedin.com/in/diegoulises"
+                  target="_blank"
+                >
                   <LightTooltip
                     title="LinkedIn"
                     placement="bottom"
@@ -168,9 +170,12 @@ const Experience = () => {
                       <LinkedInIcon fontSize="small" />
                     </Avatar>
                   </LightTooltip>
-                </a>
+                </OutboundLink>
 
-                <a href="https://github.com/Diego-Ulises" target="_blank">
+                <OutboundLink
+                  href="https://github.com/Diego-Ulises"
+                  target="_blank"
+                >
                   <LightTooltip
                     title="GitHub"
                     placement="bottom"
@@ -185,8 +190,8 @@ const Experience = () => {
                       <GitHubIcon fontSize="small" />
                     </Avatar>
                   </LightTooltip>
-                </a>
-                <a
+                </OutboundLink>
+                <OutboundLink
                   href="https://www.facebook.com/diegoulises.martinezaguilar.1"
                   target="_blank"
                 >
@@ -204,8 +209,11 @@ const Experience = () => {
                       <FacebookIcon fontSize="small" />
                     </Avatar>
                   </LightTooltip>
-                </a>
-                <a href="https://twitter.com/DiegoUlisesMtz" target="_blank">
+                </OutboundLink>
+                <OutboundLink
+                  href="https://twitter.com/DiegoUlisesMtz"
+                  target="_blank"
+                >
                   <LightTooltip
                     title="Twitter"
                     placement="bottom"
@@ -220,8 +228,8 @@ const Experience = () => {
                       <TwitterIcon fontSize="small" />
                     </Avatar>
                   </LightTooltip>
-                </a>
-                <a
+                </OutboundLink>
+                <OutboundLink
                   href="https://www.instagram.com/diego.ulisess/"
                   target="_blank"
                 >
@@ -239,7 +247,7 @@ const Experience = () => {
                       <InstagramIcon fontSize="small" />
                     </Avatar>
                   </LightTooltip>
-                </a>
+                </OutboundLink>
               </div>
 
               <h3

@@ -17,7 +17,9 @@ const Services = () => {
       </Grid>
 
       <Grid item xs={12} sm={3}>
-        <h3 className="titleServices">SOLUTIONS</h3>
+        <Typography>
+          <h3 className="titleServices">SOLUTIONS</h3>
+        </Typography>
         <Typography className="itemServices">
           <span className="bullet">° </span>Web Applications
           <span className="bullet">.</span>
@@ -50,7 +52,9 @@ const Services = () => {
         </Typography>
       </Grid>
       <Grid item xs={12} sm={6}>
-        <h3 className="titleServices">STACK</h3>
+        <Typography>
+          <h3 className="titleServices">STACK</h3>
+        </Typography>
         <Typography className="itemServices">
           <span className="bullet">° </span>HTML, CSS, Javascript
           <span className="bullet">.</span>
@@ -76,11 +80,6 @@ const Services = () => {
         </Typography>
         <Typography className="itemServices">
           <span className="bullet">° </span>
-          Browser Optimization Techniques (Caching, Lazy loading, etc.)
-          <span className="bullet"> (to learn).</span>
-        </Typography>
-        <Typography className="itemServices">
-          <span className="bullet">° </span>
           Progressive Web Applications
           <span className="bullet">.</span>
         </Typography>
@@ -88,11 +87,6 @@ const Services = () => {
           <span className="bullet">° </span>
           Web Services (GraphQL, REST)
           <span className="bullet"> (basic).</span>
-        </Typography>
-        <Typography className="itemServices">
-          <span className="bullet">° </span>
-          Testing (Unit, E2E, etc.)
-          <span className="bullet"> (to learn).</span>
         </Typography>
         <Typography className="itemServices">
           <span className="bullet">° </span>D3
@@ -106,11 +100,6 @@ const Services = () => {
           <span className="bullet">° </span>
           New Languages (Typescript, Dart)
           <span className="bullet">.</span>
-        </Typography>
-        <Typography className="itemServices">
-          <span className="bullet">° </span>
-          Server Side Rendering
-          <span className="bullet"> (to learn).</span>
         </Typography>
         <Typography className="itemServices">
           <span className="bullet">° </span>
@@ -137,10 +126,30 @@ const Services = () => {
           <span className="bullet">° </span>Software Architecture
           <span className="bullet">.</span>
         </Typography>
-        
+
+        <Typography>
+          <h3 className="titleServices">INTERESTED IN</h3>
+        </Typography>
+        <Typography className="itemServices">
+          <span className="bullet">° </span>
+          Server Side Rendering
+          <span className="bullet">.</span>
+        </Typography>
+        <Typography className="itemServices">
+          <span className="bullet">° </span>
+          Browser Optimization Techniques (Caching, Lazy loading, etc.)
+          <span className="bullet">.</span>
+        </Typography>
+        <Typography className="itemServices">
+          <span className="bullet">° </span>
+          Testing (Unit, E2E, etc.)
+          <span className="bullet">.</span>
+        </Typography>
       </Grid>
       <Grid item xs={12} sm={3}>
-        <h3 className="titleServices">FEATURES</h3>
+        <Typography>
+          <h3 className="titleServices">FEATURES</h3>
+        </Typography>
         <Typography className="itemServices">
           <span className="bullet">° </span>Personality
           <span className="bullet">.</span>

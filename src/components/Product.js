@@ -6,11 +6,6 @@ import { motion, useSpring, useTransform, AnimatePresence } from "framer-motion"
 
 import ProductImage from "../images/product-light.png"
 
-//svgs
-import { ReactComponent as Close } from "../images/close.svg"
-import { ReactComponent as Chevron } from "../images/chevron.svg"
-import { ReactComponent as DownArrow } from "../images/down-arrow.svg"
-
 import "../css/product.css"
 
 const Product = () => {

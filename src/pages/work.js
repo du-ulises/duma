@@ -184,7 +184,7 @@ function App() {
 
   return (
     <div id="root">
-      <SEO title="Work" />
+      <SEO title="WORK" />
       <Canvas
         concurrent
         pixelRatio={1}

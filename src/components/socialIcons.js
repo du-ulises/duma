@@ -5,6 +5,8 @@ import LinkedInIcon from "@material-ui/icons/LinkedIn"
 import InstagramIcon from "@material-ui/icons/Instagram"
 import { Avatar, Tooltip, withStyles, Fade } from "@material-ui/core"
 
+import { OutboundLink } from "gatsby-plugin-google-analytics"
+
 const LightTooltip = withStyles(theme => ({
   tooltip: {
     backgroundColor: "#1779ff",
@@ -17,7 +19,7 @@ const LightTooltip = withStyles(theme => ({
 }))(Tooltip)
 
 const Icon = ({ name, href, colorx }) => (
-  <a href={href} target="_blank">
+  <OutboundLink href={href} target="_blank">
     {name === "GitHubIcon" ? (
       <LightTooltip title="GitHub" placement="top" TransitionComponent={Fade}>
         <Avatar style={{ color: colorx, backgroundColor: "transparent" }}>
@@ -50,7 +52,7 @@ const Icon = ({ name, href, colorx }) => (
         </Avatar>
       </LightTooltip>
     )}
-  </a>
+  </OutboundLink>
 )
 
 const Base = styled.div`
