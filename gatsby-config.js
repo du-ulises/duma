@@ -32,9 +32,9 @@ module.exports = {
       options: {
         custom: {
           families: [
-            "Acrom Bold,Acrom Light, Acrom Medium, Acrom Regular, Acrom Thin, MADE Evolve Sans Bold EVO, MADE Evolve Sans Light EVO, MADE Evolve Sans Medium EVO, MADE Evolve Sans Regular EVO, MADE Evolve Sans Thin EVO, MADE Evolve Sans Light",
+            "Acrom Bold, Acrom Light, Acrom Medium, Acrom Regular, Acrom Thin, MADE Evolve Sans Bold EVO, MADE Evolve Sans Light EVO, MADE Evolve Sans Medium EVO, MADE Evolve Sans Regular EVO, MADE Evolve Sans Thin EVO, MADE Evolve Sans Light",
           ],
-          urls: ["/src/fonts/fonts.css"],
+          urls: ["src/fonts/fonts.css"],
         },
       },
     },

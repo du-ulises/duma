@@ -164,7 +164,7 @@ function Content() {
               : [-canvasWidth / 2, -canvasHeight / 2, 0]
           }
         >
-          #BoostYourBrand
+          #Coding
         </Dom>
       </Block>
     </>

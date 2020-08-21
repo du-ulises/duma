@@ -280,7 +280,7 @@ const Layout = ({ location, children, handleChange }) => {
                       color: "#fff",
                     }}
                   >
-                    #BoostYourBrand
+                    #Coding
                   </Typography>
                 </div>
               </>
