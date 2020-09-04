@@ -15,7 +15,7 @@ import {
 } from "../container/context/globalContext"
 
 
-const IndexPage = props => {
+const DespensaApp = props => {
   const dispatch = useGlobalDispatchContext()
   const { cursorStyles } = useGlobalStateContext()
   const onCursor = cursorType => {
@@ -35,4 +35,4 @@ const IndexPage = props => {
   )
 }
 
-export default IndexPage
+export default DespensaApp
