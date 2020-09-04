@@ -5,7 +5,7 @@ import SEO from "../components/seo"
 //Components
 import HomeContent from "../container/components/homePage/HomeContent"
 import HomeFeatured from "../container/components/homePage/HomeFeatured"
-import HomeAbout from "../container/components/homePage/HomeAbout"
+import HomeAbout from "../container/components/homePage/homeAbout"
 import HomeBanner from "../container/components/homePage/HomeBanner"
 import Gallery from "../container/components/homePage/Gallery"
 //Context
