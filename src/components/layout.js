@@ -280,7 +280,7 @@ const Layout = ({ location, children, handleChange }) => {
                       color: "#fff",
                     }}
                   >
-                    #Coding
+                    #Coding with 💙.
                   </Typography>
                 </div>
               </>
