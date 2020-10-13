@@ -368,7 +368,7 @@ const IndexPage = props => {
               >
                 Citelis
               </a>
-              , as Automotive Information Technology Specialist in Morelia, Mich. <br />
+               as Automotive Information Technology Specialist in Morelia, Mich. <br />
               <br />
               After more than 5 years as a Computer Systems Engineering student,
               I have discovered a passion for programming and development.{" "}
