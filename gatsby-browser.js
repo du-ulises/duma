@@ -5,9 +5,3 @@
  */
 
 // You can delete this file if you're not using it
-import React from "react"
-import { GlobalProvider } from "./src/container/context/globalContext"
-
-export const wrapRootElement = ({ element }) => {
-  return <GlobalProvider>{element}</GlobalProvider>
-}

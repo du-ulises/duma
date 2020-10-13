@@ -29,6 +29,8 @@ import Services from "../components/services"
 
 import { OutboundLink } from "gatsby-plugin-google-analytics"
 
+import Background from "../images/key.jpeg"
+
 const LightTooltip = withStyles(theme => ({
   tooltip: {
     backgroundColor: "#1779ff",
@@ -355,18 +357,18 @@ const IndexPage = props => {
                 Diego Ulises Martínez Aguilar
               </div>
               , I'm a Frontend Web & Mobile Developer and UX / UI Designer,
-              currently working on a digital development agency,{" "}
+              currently working on {" "}
               <a
-                href="https://digitalignition.com.mx/en/home/"
+                href="https://www.citelis.com.mx/"
                 target="_blank"
                 style={{
                   color: "#1779ff",
                   fontFamily: "MADE Evolve Sans Medium Evo",
                 }}
               >
-                Digital Ignition
+                Citelis
               </a>
-              , as Android Coordinator in Morelia, Mich. <br />
+              , as Automotive Information Technology Specialist in Morelia, Mich. <br />
               <br />
               After more than 5 years as a Computer Systems Engineering student,
               I have discovered a passion for programming and development.{" "}
@@ -393,7 +395,7 @@ const IndexPage = props => {
                 >
                   Let's work together.
                 </p>
-                <div className="pic"></div>
+                <div className="pic" style={{backgroundImage: `url(${Background})`, backgroundBlendMode: 'overlay', backgroundSize: "cover", backgroundPosition: "center"}}></div>
                 <ul>
                   <li></li>
                   <li></li>
@@ -557,7 +559,7 @@ const IndexPage = props => {
           Experience
         </Title>
       </Section>
-      <Product />
+      {/* <Product /> */}
       <Experience />
       <a id="tech">Tech</a>
       <Section style={{ marginTop: "-45px" }}>

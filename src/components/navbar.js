@@ -7,7 +7,7 @@ import { Flex, Box } from "grid-styled"
 import scrollToElement from "scroll-to-element"
 import { media } from "../utils/style"
 import "../css/neon.css"
-import blueMp3 from "../audio/Blue.mp3"
+import blueMp3 from "../audio/Tides of time.mp3"
 import soundMp3 from "../audio/sound.mp3"
 
 const Base = styled.div`

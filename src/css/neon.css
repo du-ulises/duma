@@ -1181,7 +1181,7 @@ h2 {
   z-index: 99;
   font-family: "Poppins", sans-serif;
   position: absolute;
-  bottom: 0;
+  bottom: -55px;
   right: 130px;
   font-size: 60px;
   font-weight: 700;
@@ -1289,6 +1289,11 @@ h2 {
 .about .card:hover button {
   transform: scale(16.5);
 }
+@media only screen and (max-width: 400px) {
+  .about .card:hover button {
+    transform: scale(12);
+  }
+}
 .about .card:hover p {
   color: #fff;
 }
@@ -1296,7 +1301,7 @@ h2 {
   filter: grayscale(0);
 }
 .about .card2 .pic {
-  background-image: url("https://images.unsplash.com/photo-1528785198459-ec50485704c7?ixlib=rb-0.3.5&s=3a2fc3039516555bbb2e9cd2967bd321&auto=format&fit=crop&w=1537&q=80");
+  /* background-image: url("https://images.unsplash.com/photo-1528785198459-ec50485704c7?ixlib=rb-0.3.5&s=3a2fc3039516555bbb2e9cd2967bd321&auto=format&fit=crop&w=1537&q=80"); */
 }
 .about .card2 button {
   background-color: #2b26c3;

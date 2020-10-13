@@ -14,6 +14,13 @@ import "../css/neon.css"
 const Experience = () => {
   const images = useStaticQuery(graphql`
     query {
+      citelis: file(relativePath: { eq: "companies/citelis.png" }) {
+        childImageSharp {
+          fluid(maxHeight: 200) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
       di: file(relativePath: { eq: "companies/di.png" }) {
         childImageSharp {
           fluid(maxHeight: 200) {
@@ -57,9 +64,9 @@ const Experience = () => {
   return (
     <div>
       <VerticalTimeline>
-        <VerticalTimelineElement
+      <VerticalTimelineElement
           className="vertical-timeline-element--work"
-          date="16 Dec. 2019 - Present"
+          date="12 Oct. 2020 - Present"
           iconStyle={{
             background: "#1f1f1f",
             alignItems: "center",
@@ -70,6 +77,34 @@ const Experience = () => {
             <Img
               imgStyle={{ objectFit: "contain" }}
               style={{ maxHeight: "80%" }}
+              fluid={images.citelis.childImageSharp.fluid}
+            />
+          }
+        >
+          <h3
+            className="vertical-timeline-element-title"
+            style={{ fontFamily: "MADE Evolve Sans Bold" }}
+          >
+            Citelis - Organización de los Ramírez
+          </h3>
+          <Typography>
+            <strong>Automotive Information Technology Specialist 💙.</strong>
+          </Typography>
+        </VerticalTimelineElement>
+        
+        <VerticalTimelineElement
+          className="vertical-timeline-element--work"
+          date="16 Dec. 2019 - 15 Sep. 2020"
+          iconStyle={{
+            background: "#1f1f1f",
+            alignItems: "center",
+            display: "grid",
+            color: "#fff",
+          }}
+          icon={
+            <Img
+              imgStyle={{ objectFit: "contain" }}
+              style={{ maxHeight: "60%" }}
               fluid={images.di.childImageSharp.fluid}
             />
           }

@@ -155,7 +155,7 @@ function Content() {
           />
         </Block>
       ))}
-      <Block factor={1.25} offset={8}>
+      <Block factor={1.25} offset={11}>
         <Dom
           className="bottom-left"
           position={
@@ -164,7 +164,7 @@ function Content() {
               : [-canvasWidth / 2, -canvasHeight / 2, 0]
           }
         >
-          #Coding
+          #Coding with 💙.
         </Dom>
       </Block>
     </>
@@ -217,7 +217,7 @@ function App() {
             color: "#fff",
           }}
         >
-          Designer, Developer & Engineer
+          SOFTWARE ENGINEERING
         </h1>
         <div className="frame__nav">
           <a
@@ -302,9 +302,10 @@ function App() {
                 setSound(true)
               }
             }}
-            href="#07"
-            children="06"
+            href="#010"
+            children="...09"
           />
+          
         </div>
       </div>
       <div

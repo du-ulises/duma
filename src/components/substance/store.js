@@ -2,8 +2,8 @@ import { createRef } from "react"
 import { Vector3 } from "three"
 
 const state = {
-  sections: 9,
-  pages: 8.5,
+  sections: 12,
+  pages: 11.5,
   zoom: 75,
   paragraphs: [
     {
@@ -59,10 +59,38 @@ const state = {
       aspect: 1.77,
       text: "School Control System for the Marist University, is a management system dedicated to provide a communication bridge between teachers, students and career coordinators.",
     },
+    {
+      offset: 8,
+      factor: 2.0,
+      header: "Technical Laboratory.",
+      image: "/substance/Technical Laboratory.png",
+      aspect: 0.665,
+      text:
+        "",
+    },
+    {
+      offset: 9,
+      factor: 2.0,
+      header: "Hollister.",
+      image: "/substance/Hollister.png",
+      aspect: 0.665,
+      text:
+        "",
+    },
+    {
+      offset: 10,
+      factor: 2.0,
+      header: "eBook.",
+      image: "/substance/Ebook.png",
+      aspect: 0.665,
+      text:
+        "",
+    },
   ],
   stripes: [
     { offset: 0, color: "#000", height: 13 },
     { offset: 6.3, color: "#000", height: 20 },
+    { offset: 9.2, color: "#000", height: 5 },
   ],
   diamonds: [
     { x: 0, offset: 0.15, pos: new Vector3(), scale: 0.6, factor: 1.8 },
@@ -72,7 +100,10 @@ const state = {
     { x: 0, offset: 4, pos: new Vector3(), scale: 0.8, factor: 2.5 },
     { x: 2, offset: 5.5, pos: new Vector3(), scale: 1.25, factor: 0.85 },
     { x: -5, offset: 7, pos: new Vector3(), scale: 0.8, factor: 2 },
-    { x: 0, offset: 8, pos: new Vector3(), scale: 1.5, factor: 6 },
+    { x: 0, offset: 8, pos: new Vector3(), scale: 0.8, factor: 2.5 },
+    { x: 0, offset: 9, pos: new Vector3(), scale: 0.6, factor: 1.8 },
+    { x: 2, offset: 10, pos: new Vector3(), scale: 1.25, factor: 0.85 },
+    { x: 0, offset: 11, pos: new Vector3(), scale: 1.5, factor: 6 },
   ],
   top: createRef(),
 }
