@@ -357,7 +357,7 @@ const IndexPage = props => {
                 Diego Ulises Martínez Aguilar
               </div>
               , I'm a Frontend Web & Mobile Developer and UX / UI Designer,
-              currently working on {" "}
+              currently working on{" "}
               <a
                 href="https://www.citelis.com.mx/"
                 target="_blank"
@@ -366,9 +366,10 @@ const IndexPage = props => {
                   fontFamily: "MADE Evolve Sans Medium Evo",
                 }}
               >
-                Citelis
+                Citelis{" "}
               </a>
-               as Automotive Information Technology Specialist in Morelia, Mich. <br />
+              as Automotive Information Technology Specialist in Morelia, Mich.{" "}
+              <br />
               <br />
               After more than 5 years as a Computer Systems Engineering student,
               I have discovered a passion for programming and development.{" "}
@@ -395,7 +396,15 @@ const IndexPage = props => {
                 >
                   Let's work together.
                 </p>
-                <div className="pic" style={{backgroundImage: `url(${Background})`, backgroundBlendMode: 'overlay', backgroundSize: "cover", backgroundPosition: "center"}}></div>
+                <div
+                  className="pic"
+                  style={{
+                    backgroundImage: `url(${Background})`,
+                    backgroundBlendMode: "overlay",
+                    backgroundSize: "cover",
+                    backgroundPosition: "center",
+                  }}
+                ></div>
                 <ul>
                   <li></li>
                   <li></li>
@@ -596,7 +605,9 @@ const IndexPage = props => {
         <Typography className="blueText">
           Instituto Tecnológico de Morelia (Aug. 2015 - Present).
         </Typography>
-        <Typography className="whiteText">English Courses, Level B1.</Typography>
+        <Typography className="whiteText">
+          English Courses, Level B1.
+        </Typography>
         <Typography className="blueText">
           Coordinación de Lenguas Extranjeras del ITMorelia (Jan. 2017 - Jun.
           2020).
@@ -604,8 +615,12 @@ const IndexPage = props => {
         <Typography className="whiteText">
           Development and Engineering Online Courses.
         </Typography>
-        <Typography className="blueText">Platzi (Jan. 2019 - Nov. 2019).</Typography>
-        <Typography className="whiteText">Entrepreneur Psychology Workshop.</Typography>
+        <Typography className="blueText">
+          Platzi (Jan. 2019 - Nov. 2019).
+        </Typography>
+        <Typography className="whiteText">
+          Entrepreneur Psychology Workshop.
+        </Typography>
         <Typography className="blueText">
           Facultad de Psicología de la UMSNH / Instituto Tecnológico de Morelia
           (Oct. 2018).
