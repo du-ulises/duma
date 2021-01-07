@@ -51,6 +51,11 @@ const Services = () => {
           Machine Learning Prediction
           <span className="bullet">.</span>
         </Typography>
+        <Typography>
+          <span className="bullet">° </span>
+          CRM Solutions
+          <span className="bullet">.</span>
+        </Typography>
       </Grid>
       <Grid item xs={12} sm={6}>
         <Typography className="titleServices">
@@ -72,7 +77,7 @@ const Services = () => {
         <Typography>
           <span className="bullet">° </span>
           CSS Preprocessors
-          <span className="bullet"> (basic).</span>
+          <span className="bullet">.</span>
         </Typography>
         <Typography>
           <span className="bullet">° </span>
@@ -86,8 +91,8 @@ const Services = () => {
         </Typography>
         <Typography>
           <span className="bullet">° </span>
-          Web Services (GraphQL, REST)
-          <span className="bullet"> (basic).</span>
+          Web Services (REST)
+          <span className="bullet">.</span>
         </Typography>
         <Typography>
           <span className="bullet">° </span>D3
@@ -103,17 +108,17 @@ const Services = () => {
           <span className="bullet">.</span>
         </Typography>
         <Typography>
-          <span className="bullet">° </span>
-          Backend Programming Lenguages
-          <span className="bullet"> (basic).</span>
-        </Typography>
-        <Typography>
           <span className="bullet">° </span>Databases
           <span className="bullet">.</span>
         </Typography>
         <Typography>
           <span className="bullet">° </span>Containers
           <span className="bullet"> (basic).</span>
+        </Typography>
+        <Typography>
+          <span className="bullet">° </span>
+          Server Side Rendering
+          <span className="bullet">.</span>
         </Typography>
         <Typography>
           <span className="bullet">° </span>Static Site Generators
@@ -125,25 +130,6 @@ const Services = () => {
         </Typography>
         <Typography>
           <span className="bullet">° </span>Software Architecture
-          <span className="bullet">.</span>
-        </Typography>
-
-        <Typography className="titleServices">
-          INTERESTED IN
-        </Typography>
-        <Typography>
-          <span className="bullet">° </span>
-          Server Side Rendering
-          <span className="bullet">.</span>
-        </Typography>
-        <Typography>
-          <span className="bullet">° </span>
-          Browser Optimization Techniques (Caching, Lazy loading)
-          <span className="bullet">.</span>
-        </Typography>
-        <Typography>
-          <span className="bullet">° </span>
-          Testing (Unit, E2E)
           <span className="bullet">.</span>
         </Typography>
       </Grid>

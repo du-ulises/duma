@@ -109,9 +109,8 @@ const Experience = () => {
               >
                 Thank you for your interest!
               </h1>
-              <h5
+              <Typography
                 style={{
-                  fontFamily: "MADE Evolve Sans Regular",
                   color: "#fff",
                 }}
               >
@@ -127,16 +126,15 @@ const Experience = () => {
                 >
                   Nikita Pashkov
                 </OutboundLink>
-              </h5>
-              <h3
+              </Typography>
+              <Typography
                 style={{
-                  fontFamily: "MADE Evolve Sans Regular",
                   color: "#a3a3a3",
                   marginTop: "2rem",
                 }}
               >
                 FOLLOW ME.
-              </h3>
+              </Typography>
               <div className="follow">
                 <OutboundLink
                   href="www.linkedin.com/in/diegoulises"
@@ -236,17 +234,15 @@ const Experience = () => {
                 </OutboundLink>
               </div>
 
-              <h3
+              <Typography
                 style={{
-                  fontFamily: "MADE Evolve Sans Regular",
                   color: "#a3a3a3",
                 }}
               >
                 COOKIES POLICY.
-              </h3>
-              <h5
+              </Typography>
+              <Typography
                 style={{
-                  fontFamily: "MADE Evolve Sans Regular",
                   color: "#fff",
                 }}
               >
@@ -254,7 +250,7 @@ const Experience = () => {
                 site uses cookies, which are a small removable data file that is
                 stored in your web browser on your computer, to improve your
                 experience.
-              </h5>
+              </Typography>
             </div>
           </Grid>
           <Grid item xs={11} md={5}>
@@ -262,14 +258,14 @@ const Experience = () => {
               <div className="triangle">
                 <div id="triangle-topright"></div>
               </div>
-              <h3
+              <Typography
+                variant='h5'
                 style={{
-                  fontFamily: "MADE Evolve Sans Regular",
                   color: "#fff",
                 }}
               >
                 GET IN TOUCH.
-              </h3>
+              </Typography>
               <h1
                 style={{
                   fontFamily: "MADE Evolve Sans Bold",
@@ -279,52 +275,54 @@ const Experience = () => {
               >
                 Let's talk!
               </h1>
-              <h5
+              <Typography
                 style={{
-                  fontFamily: "MADE Evolve Sans Regular",
                   color: "#fff",
                 }}
               >
                 I’d love to know what you're pushing towards. Reach out with
                 whatever you've got.
-              </h5>
+              </Typography>
 
-              <h3
+              <Typography
+                variant='h5'
                 style={{
-                  fontFamily: "MADE Evolve Sans Regular",
                   color: "#a3a3a3",
+                  marginTop: "0.5rem"
                 }}
               >
                 CALL.
-              </h3>
+              </Typography>
               <a href="tel:+524381093584">
                 <Typography className="infoText">
                   <WhatsAppIcon style={{ marginRight: "0.5rem" }} /> +52 (438)
                   109 35 84
                 </Typography>
               </a>
-              <h3
+              <Typography
+                variant='h5'
                 style={{
-                  fontFamily: "MADE Evolve Sans Regular",
                   color: "#a3a3a3",
+                  marginTop: "0.5rem"
                 }}
               >
                 SUBMIT.
-              </h3>
+              </Typography>
               <a href="mailto:du.ulises@gmail.com">
                 <Typography className="infoText">
                   <MailOutlineIcon style={{ marginRight: "0.5rem" }} />{" "}
                   du.ulises@gmail.com
                 </Typography>
               </a>
-              <h3
+              <Typography
+                variant='h5'
                 style={{
-                  fontFamily: "MADE Evolve Sans Regular",
                   color: "#a3a3a3",
+                  marginTop: "0.5rem"
                 }}
               >
                 VISIT.
-              </h3>
+              </Typography>
               <a href="https://www.google.com.mx/maps/place/Morelia,+Michoac%C3%A1n/@19.7038033,-101.2761649,12z/data=!3m1!4b1!4m5!3m4!1s0x842d0ba2b29da7e3:0x4016978679c8620!8m2!3d19.7059504!4d-101.1949825?hl=en&authuser=0">
                 <Typography className="infoText">
                   <LocationOnIcon style={{ marginRight: "0.5rem" }} /> Morelia,

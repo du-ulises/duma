@@ -278,7 +278,7 @@ const IndexPage = props => {
             <Img
               style={{ maxHeight: "100%" }}
               fluid={images.me.childImageSharp.fluid}
-              imgStyle={{ objectFit: "contain" }}
+              imgStyle={{ objectFit: "contain", objectPosition: 'bottom center' }}
               className="uli"
             />
             <span className="slide"></span>
@@ -343,7 +343,6 @@ const IndexPage = props => {
               style={{
                 color: "#fff",
                 textAlign: "center",
-                fontFamily: "MADE Evolve Sans Medium Evo",
                 zIndex: 2,
               }}
             >
@@ -363,7 +362,7 @@ const IndexPage = props => {
                 target="_blank"
                 style={{
                   color: "#1779ff",
-                  fontFamily: "MADE Evolve Sans Medium Evo",
+                  fontFamily: "MADE Evolve Sans Medium",
                 }}
               >
                 Citelis{" "}

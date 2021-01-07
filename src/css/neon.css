@@ -967,8 +967,9 @@ li span.active::before {
 }
 .uli {
   height: 90vh;
-  max-width: 500px;
+  max-width: 600px;
   z-index: 2;
+  object-position: bottom center !important;
 }
 .uli:hover {
   -webkit-filter: drop-shadow(5px 5px 5px #1779ff);
@@ -1004,6 +1005,11 @@ li span.active::before {
   animation: animate 2s ease-out infinite; */
   transform: rotate(-45deg);
   z-index: 2;
+}
+@media only screen and (min-width: 767px) {
+  .slide2 {
+    width: 2100px;
+  }
 }
 /* EMBLEM */
 .emblem {

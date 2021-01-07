@@ -233,6 +233,20 @@ const Tech = () => {
           }
         }
       }
+      nextjs: file(relativePath: { eq: "dev/nextjs.png" }) {
+        childImageSharp {
+          fluid(maxHeight: 200) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+      yarn: file(relativePath: { eq: "dev/yarn.png" }) {
+        childImageSharp {
+          fluid(maxHeight: 200) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
     }
   `)
 
@@ -328,7 +342,7 @@ const Tech = () => {
       <div className="dev-item">
         <Img
           style={{ maxHeight: "100%" }}
-          fluid={images.kotlin.childImageSharp.fluid}
+          fluid={images.nextjs.childImageSharp.fluid}
           imgStyle={{ objectFit: "contain" }}
           className="dev-icon"
         />
@@ -340,7 +354,7 @@ const Tech = () => {
             fontSize: "1rem",
           }}
         >
-          Kotlin
+          Next Js
         </Typography>
       </div>
       <div className="dev-item">
@@ -539,6 +553,24 @@ const Tech = () => {
           }}
         >
           Sass
+        </Typography>
+      </div>
+      <div className="dev-item">
+        <Img
+          style={{ maxHeight: "100%" }}
+          fluid={images.kotlin.childImageSharp.fluid}
+          imgStyle={{ objectFit: "contain" }}
+          className="dev-icon"
+        />
+        <Typography
+          style={{
+            color: "#fff",
+            fontFamily: "MADE Evolve Sans Regular EVO",
+            marginBottom: 0,
+            fontSize: "1rem",
+          }}
+        >
+          Kotlin
         </Typography>
       </div>
       <div className="dev-item">
@@ -757,6 +789,24 @@ const Tech = () => {
           }}
         >
           Adobe Xd
+        </Typography>
+      </div>
+      <div className="dev-item">
+        <Img
+          style={{ maxHeight: "100%" }}
+          fluid={images.yarn.childImageSharp.fluid}
+          imgStyle={{ objectFit: "contain" }}
+          className="dev-icon"
+        />
+        <Typography
+          style={{
+            color: "#fff",
+            fontFamily: "MADE Evolve Sans Regular EVO",
+            marginBottom: 0,
+            fontSize: "1rem",
+          }}
+        >
+          Yarn
         </Typography>
       </div>
       <div className="dev-item">
