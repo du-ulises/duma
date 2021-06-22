@@ -22,7 +22,7 @@ html {
   top: 0;
   right: 0;
   width: 10px;
-  background: linear-gradient(to top, #000, #1779ff);
+  background: linear-gradient(to top, #000, #CFC5AD);
   background-size: 400% 400%;
   animation: animate 5s ease-out infinite;
   z-index: 10;
@@ -47,7 +47,7 @@ html {
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(to top, #000, #1779ff);
+  background: linear-gradient(to top, #000, #CFC5AD);
   filter: blur(10px);
 }
 
@@ -58,7 +58,7 @@ html {
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(to top, #000, #1779ff);
+  background: linear-gradient(to top, #000, #CFC5AD);
   filter: blur(30px);
 }
 
@@ -70,13 +70,13 @@ body {
 #neonButton {
   position: relative;
   color: #fff;
-  background: #1779ff;
+  background: #CFC5AD;
   padding: 15px 30px;
   font-size: 15px;
   letter-spacing: 2px;
   text-transform: uppercase;
   text-decoration: none;
-  box-shadow: 0 0 10px #1779ff, 0 0 40px #1779ff, 0 0 80px #1779ff;
+  box-shadow: 0 0 10px #CFC5AD, 0 0 40px #CFC5AD, 0 0 80px #CFC5AD;
   overflow: hidden;
   cursor: pointer;
   z-index: 1;
@@ -93,8 +93,8 @@ body {
 }
 #neonButton:hover {
   color: #fff;
-  background: #1779ff;
-  box-shadow: 0 0 10px #1779ff, 0 0 40px #1779ff, 0 0 80px #1779ff;
+  background: #CFC5AD;
+  box-shadow: 0 0 10px #CFC5AD, 0 0 40px #CFC5AD, 0 0 80px #CFC5AD;
   transition-delay: 1s;
   transform: scale(1.05);
 }
@@ -338,11 +338,11 @@ nav #marker {
   left: 0;
   height: 2px;
   width: 0;
-  background: #1779ff;
+  background: #CFC5AD;
   bottom: -2px;
   transition: 0.5s;
   border-radius: 10px;
-  box-shadow: 0 0 10px #1779ff, 0 0 40px #1779ff, 0 0 80px #1779ff;
+  box-shadow: 0 0 10px #CFC5AD, 0 0 40px #CFC5AD, 0 0 80px #CFC5AD;
 }
 
 @media only screen and (max-width: 767px) {
@@ -368,7 +368,7 @@ nav #marker {
   height: 4px;
   border-radius: 5px;
   background: #fff;
-  box-shadow: 0 0 5px #1779ff, 0 0 40px #1779ff, 0 0 80px #1779ff;
+  box-shadow: 0 0 5px #CFC5AD, 0 0 40px #CFC5AD, 0 0 80px #CFC5AD;
   cursor: pointer;
   transition: all 0.15s ease;
 }
@@ -376,7 +376,7 @@ nav #marker {
 .toggle::before {
   content: "";
   background: #fff;
-  box-shadow: 0 0 5px #1779ff, 0 0 40px #1779ff, 0 0 80px #1779ff;
+  box-shadow: 0 0 5px #CFC5AD, 0 0 40px #CFC5AD, 0 0 80px #CFC5AD;
   position: absolute;
   height: 4px;
   width: 40px;
@@ -387,7 +387,7 @@ nav #marker {
 
 .toggle::after {
   background: #fff;
-  box-shadow: 0 0 5px #1779ff, 0 0 40px #1779ff, 0 0 80px #1779ff;
+  box-shadow: 0 0 5px #CFC5AD, 0 0 40px #CFC5AD, 0 0 80px #CFC5AD;
   content: "";
   position: absolute;
   height: 4px;
@@ -456,8 +456,8 @@ nav #marker {
   list-style: none;
 }
 #navigation ul li a {
-  /* color: #1779ff; */
-/* text-shadow: 0 0 10px #1779ff, 0 0 40px #1779ff, 0 0 80px #1779ff;  
+  /* color: #CFC5AD; */
+/* text-shadow: 0 0 10px #CFC5AD, 0 0 40px #CFC5AD, 0 0 80px #CFC5AD;  
   text-decoration: none;
   display: inline-block;
   font-family: "MADE Evolve Sans Light EVO";
@@ -532,7 +532,7 @@ nav #marker {
 
 .expand {
   animation: cursorAnim3 0.5s forwards;
-  border: 2px solid #1779ff;
+  border: 2px solid #CFC5AD;
 }
 
 /* lists */
@@ -559,7 +559,7 @@ li span.active::before {
   width: 60px;
   height: 60px;
   background-color: transparent;
-  border: 8px solid #1779ff;
+  border: 8px solid #CFC5AD;
 }
 
 .boxAnimatedBackground div:nth-child(1) {
@@ -972,8 +972,8 @@ li span.active::before {
   object-position: bottom center !important;
 }
 .uli:hover {
-  -webkit-filter: drop-shadow(5px 5px 5px #1779ff);
-  filter: drop-shadow(5px 5px 5px #1779ff);
+  -webkit-filter: drop-shadow(5px 5px 5px #CFC5AD);
+  filter: drop-shadow(5px 5px 5px #CFC5AD);
 }
 @media only screen and (max-width: 767px) {
   .uli {
@@ -1041,7 +1041,7 @@ li span.active::before {
   left: 18px;
   height: 100%;
   width: 4px;
-  background: linear-gradient(to top, #000, #1779ff) !important;
+  background: linear-gradient(to top, #000, #CFC5AD) !important;
   background-size: 400% 400%;
   animation: animate 5s ease-out infinite;
 }
@@ -1082,7 +1082,7 @@ vertical-timeline-element-date
   background: #fff;
   border-radius: 0.25em;
   padding: 1em;
-  box-shadow: 0 3px 0 #1779ff;
+  box-shadow: 0 3px 0 #CFC5AD;
   opacity: 1;
 }
 
@@ -1510,7 +1510,7 @@ h2 {
   color: #fff;
 }
 .blueText {
-  color: #1779ff;
+  color: #CFC5AD;
   margin-bottom: 2rem !important;
 }
 .whiteText {
@@ -1518,7 +1518,7 @@ h2 {
 }
 
 .titleServices {
-  color: #1779ff;
+  color: #CFC5AD;
   font-size: 1.2rem;
 }
 .itemServices {
@@ -1528,10 +1528,10 @@ h2 {
 #skillSet {
   text-align: center;
   font-family: "MADE Evolve Sans Bold Evo";
-  color: #1779ff99;
+  color: #CFC5AD99;
   font-size: 4rem;
   margin-top: -30px;
 }
 .bullet {
-  color: #1779ff
+  color: #CFC5AD
 }

@@ -3,10 +3,8 @@
  * with Gatsby's useStaticQuery component
  */
 
-import React, { useState, useRef } from "react"
+import React from "react"
 import { motion, AnimatePresence } from "framer-motion"
-import { useStaticQuery, graphql } from "gatsby"
-import Img from "gatsby-image"
 import PropTypes from "prop-types"
 import styled, { createGlobalStyle } from "styled-components"
 import { createMuiTheme } from "@material-ui/core/styles"
@@ -97,46 +95,10 @@ const variants = {
   },
 }
 
-const Layout = ({ location, children, handleChange }) => {
-  const constraintsRef = useRef(null)
-  const images = useStaticQuery(graphql`
-    query {
-      DeerDark: file(relativePath: { eq: "DeerDark.png" }) {
-        childImageSharp {
-          fluid(maxWidth: 400) {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
-      DeerLight: file(relativePath: { eq: "DeerLight.png" }) {
-        childImageSharp {
-          fluid(maxWidth: 400) {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
-      isometric: file(relativePath: { eq: "isometric.png" }) {
-        childImageSharp {
-          fluid(maxWidth: 800) {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
-    }
-  `)
-
-  const [environment, setEnvironment] = useState({ language: "EN" })
-  const languages = ["EN", "|", "ES"]
-  const handleChangueLanguage = language => {
-    setEnvironment({ ...environment, language })
-  }
+const Layout = ({ location, children }) => {
 
   return (
     <ThemeProvider theme={theme}>
-      <Body>
-        <GlobalStyle />
-      </Body>
-
       <AnimatePresence>
         <motion.main
           key={location?.pathname}
@@ -157,59 +119,6 @@ const Layout = ({ location, children, handleChange }) => {
                   }}
                 >
                   <main>{children}</main>
-                </div>
-                <div className="banner">
-                  <h1
-                    id="text"
-                    style={{
-                      color: "#fff",
-                    }}
-                  >
-                    DUMA
-                  </h1>
-                  <div className="copyright">
-                    <Typography style={{ color: "#fff" }}>
-                      © {new Date().getFullYear()}, By Diego Ulises Martínez
-                      {/* {` `}
-                      <a
-                        href="https://www.gatsbyjs.org"
-                        style={{
-                          //color: "#1779ff",
-                          color: "#fff",
-                          textDecoration: "none",
-                        }}
-                      >
-                        Diego Ulises Martínez
-                      </a> */}
-                    </Typography>
-                  </div>
-                  <div className="isometric">
-                    <motion.div
-                      className="home"
-                      variants={containerVariants}
-                      initial="hidden"
-                      animate="visible"
-                      exit="exit"
-                    >
-                      <AnimatePresence>
-                        <Img
-                          imgStyle={{ objectFit: "contain" }}
-                          style={{ margin: "1rem", maxWidth: "800px" }}
-                          fluid={images.isometric.childImageSharp.fluid}
-                        />
-                      </AnimatePresence>
-                    </motion.div>
-                  </div>
-                  <Typography
-                    style={{
-                      position: "absolute",
-                      bottom: "10px",
-                      zIndex: 2,
-                      color: "#fff",
-                    }}
-                  >
-                    #Coding with 💙.
-                  </Typography>
                 </div>
               </>
             )}

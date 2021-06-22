@@ -21,7 +21,7 @@ const NotFoundPage = props => {
     <Layout
       location={props.location}
     >
-      <SEO title="404: Not found" />
+      <SEO title="Page Not found" />
       <Link
         to="/"
         id="neonButton"

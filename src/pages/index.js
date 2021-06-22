@@ -123,7 +123,7 @@ function Content() {
         </Block>
         <Block factor={1.0}>
           <Dom position={[-w / 3.2, -w * 0.08 + 0.25, -1]}>
-            + By Diego Ulises Martínez Aguilar...
+            + By Diego Ulises Martínez Aguilar
           </Dom>
         </Block>
       </Block>
@@ -161,7 +161,7 @@ function Content() {
               : [-canvasWidth / 2, -canvasHeight / 2, 0]
           }
         >
-          #Coding with 🤍.
+          #Coding with <span role='img' aria-label={'love'} aria-labelledby={'love'}>🤍</span>.
         </Dom>
       </Block>
     </>
@@ -298,25 +298,13 @@ function App() {
           />
         </div>
       </div>
-      <div
-        className="footer-sound"
-        onClick={() => {
-          setPlaying(!playing)
+      <ReactHowler
+        src={[soundMp3]}
+        playing={sound}
+        onEnd={() => {
+          setSound(false)
         }}
-        onMouseEnter={() => {
-          if (playing) {
-            setSound(true)
-          }
-        }}
-      >
-        <ReactHowler
-          src={[soundMp3]}
-          playing={sound}
-          onEnd={() => {
-            setSound(false)
-          }}
-        />
-      </div>
+      />
     </div>
   )
 }
