@@ -983,34 +983,6 @@ li span.active::before {
   }
 }
 
-/* GSAP */
-.slide {
-  position: absolute;
-  left: -500px;
-  bottom: 500px;
-  width: 1500px;
-  height: 50px;
-  background: #4353ff99;
-  transform: rotate(-45deg);
-  z-index: 0;
-}
-.slide2 {
-  position: absolute;
-  left: -500px;
-  bottom: 240px;
-  width: 1800px;
-  height: 50px;
-  background: #4353ff99;
-  /* background: linear-gradient(to right, transparent, #1779ff99) !important;
-  animation: animate 2s ease-out infinite; */
-  transform: rotate(-45deg);
-  z-index: 2;
-}
-@media only screen and (min-width: 767px) {
-  .slide2 {
-    width: 2100px;
-  }
-}
 /* EMBLEM */
 .emblem {
   position: absolute;

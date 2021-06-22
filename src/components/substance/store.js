@@ -2,8 +2,8 @@ import { createRef } from "react"
 import { Vector3 } from "three"
 
 const state = {
-  sections: 12,
-  pages: 11.5,
+  sections: 15,
+  pages: 14.5,
   zoom: 75,
   paragraphs: [
     {
@@ -12,8 +12,7 @@ const state = {
       header: "Agenda Cave.",
       image: "/substance/R1.jpg",
       aspect: 0.665,
-      text:
-        "Agenda Cave is a mobile application tailored for The Cave Barbershop so customers can schedule an appointment for any of the services they offer.",
+      text: ""
     },
     {
       offset: 2,
@@ -21,8 +20,7 @@ const state = {
       header: "CoWorker Platform.",
       image: "/substance/R2 COWORKER-02-01.jpg",
       aspect: 1.5037,
-      text:
-        "By Digital Ignition. Coworker Platform is a Business Management Systems in charge of automating the company's operational processes.",
+      text: "By Digital Ignition."
     },
     {
       offset: 3,
@@ -30,8 +28,7 @@ const state = {
       header: "Despensa App.",
       image: "/substance/R3 DESPENSA APP-01.jpg",
       aspect: 1.5,
-      text:
-        "Despensa App is an e-commerce that helps you find products from your nearest store, provides tools to manage your pantry, shopping list, secure payments and more.",
+      text: ""
     },
     {
       offset: 4,
@@ -39,8 +36,7 @@ const state = {
       header: "Acamex.",
       image: "/substance/Acamex-01.jpg",
       aspect: 0.665,
-      text:
-        "By Digital Ignition. The Civil Association of Approved Certifiers in Mexico, ACAMEX for its initials in Spanish, is a results-oriented website of digital transformation strategies, provides a blog for ACAMEX members.",
+      text: "By Digital Ignition."
     },
     {
       offset: 5,
@@ -48,8 +44,7 @@ const state = {
       header: "Travel App",
       image: "/substance/Travel-01.jpg",
       aspect: 1.55,
-      text:
-        "Travel App is a mobile application for travelers, it allows you to capture photos and share them with your friends, so you can also see reviews of other places, add comments and mark your favorites.",
+      text: ""
     },
     {
       offset: 7,
@@ -57,7 +52,7 @@ const state = {
       header: "Sistema de Control Escolar Maristas.",
       image: "/substance/Marista-01.jpg",
       aspect: 1.77,
-      text: "School Control System for the Marist University, is a management system dedicated to provide a communication bridge between teachers, students and career coordinators.",
+      text: ""
     },
     {
       offset: 8,
@@ -66,16 +61,16 @@ const state = {
       image: "/substance/Technical Laboratory.png",
       aspect: 0.665,
       text:
-        "",
+        ""
     },
     {
       offset: 9,
       factor: 2.0,
-      header: "Hollister.",
+      header: "Hollister Auto.",
       image: "/substance/Hollister.png",
       aspect: 0.665,
       text:
-        "",
+        ""
     },
     {
       offset: 10,
@@ -84,13 +79,37 @@ const state = {
       image: "/substance/Ebook.png",
       aspect: 0.665,
       text:
-        "",
+        ""
+    },
+    {
+      offset: 11,
+      factor: 2.25,
+      header: "Bloom Cycling.",
+      image: "/substance/Bloom Cycling.png",
+      aspect: 1.5037,
+      text: "By Digital Ignition."
+    },
+    {
+      offset: 12,
+      factor: 2.25,
+      header: "eCert.",
+      image: "/substance/ECERT.png",
+      aspect: 1.5037,
+      text: "By Digital Ignition."
+    },
+    {
+      offset: 13,
+      factor: 2.25,
+      header: "Wiximo Social CRM.",
+      image: "/substance/wiximo.png",
+      aspect: 1.5037,
+      text: "By Citelis Technology."
     },
   ],
   stripes: [
     { offset: 0, color: "#000", height: 13 },
     { offset: 6.3, color: "#000", height: 20 },
-    { offset: 9.2, color: "#000", height: 5 },
+    { offset: 9.2, color: "#000", height: 5 }
   ],
   diamonds: [
     { x: 0, offset: 0.15, pos: new Vector3(), scale: 0.6, factor: 1.8 },
@@ -104,8 +123,11 @@ const state = {
     { x: 0, offset: 9, pos: new Vector3(), scale: 0.6, factor: 1.8 },
     { x: 2, offset: 10, pos: new Vector3(), scale: 1.25, factor: 0.85 },
     { x: 0, offset: 11, pos: new Vector3(), scale: 1.5, factor: 6 },
+    { x: 2, offset: 12, pos: new Vector3(), scale: 0.8, factor: 2.1 },
+    { x: 0, offset: 3.2, pos: new Vector3(), scale: 0.8, factor: 1.75 },
+    { x: 0, offset: 14, pos: new Vector3(), scale: 1.5, factor: 6 }
   ],
-  top: createRef(),
+  top: createRef()
 }
 
 export default state

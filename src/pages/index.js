@@ -12,7 +12,6 @@ import SEO from "../components/seo"
 import "../css/neon.css"
 import "../components/substance/styles.css"
 
-import tidesOfTimeMp3 from "../audio/Tides of time.mp3"
 import soundMp3 from "../audio/sound.mp3"
 
 function Startup() {
@@ -41,7 +40,7 @@ function Paragraph({ image, index, offset, factor, header, aspect, text }) {
   const alignRight = (canvasWidth - w * size - margin) / 2
   const pixelWidth = w * state.zoom * size
   const left = !(index % 2)
-  const color = index % 2 ? "#d4af37" : "#d9d9d9"
+  const color = index % 2 ? "#CFC5AD" : "#d9d9d9"
   return (
     <Block factor={factor} offset={offset}>
       <group position={[left ? -alignRight : alignRight, 0, 0]}>
@@ -85,7 +84,7 @@ function Paragraph({ image, index, offset, factor, header, aspect, text }) {
           <Text
             opacity={0.5}
             size={w * 0.1}
-            color="#1A1E2A"
+            color="#f0f0f0"
             position={[
               ((left ? w : -w) / 2) * size,
               (w * size) / aspect / 1.5,
@@ -117,16 +116,16 @@ function Content() {
             left
             size={w * 0.1}
             position={[-w / 3.2, 0.5, -1]}
-            color="#4353ff"
+            color="#CFC5AD"
           >
-            WORK
+            MY WORK
           </Text>
         </Block>
-        {/* <Block factor={1.0}>
+        <Block factor={1.0}>
           <Dom position={[-w / 3.2, -w * 0.08 + 0.25, -1]}>
-            Frontend Web & Mobile Developer + UX / UI Designer
+            + By Diego Ulises Martínez Aguilar...
           </Dom>
-        </Block> */}
+        </Block>
       </Block>
       <Block factor={1.2} offset={5.7}>
         <MultilineText
@@ -153,7 +152,7 @@ function Content() {
           />
         </Block>
       ))}
-      <Block factor={1.25} offset={11}>
+      <Block factor={1.25} offset={14}>
         <Dom
           className="bottom-left"
           position={
@@ -162,7 +161,7 @@ function Content() {
               : [-canvasWidth / 2, -canvasHeight / 2, 0]
           }
         >
-          #Coding with 💙.
+          #Coding with 🤍.
         </Dom>
       </Block>
     </>
@@ -182,7 +181,7 @@ function App() {
 
   return (
     <div id="root">
-      <SEO title="WORK" />
+      <SEO title="MY WORK" />
       <Canvas
         concurrent
         pixelRatio={1}
@@ -294,8 +293,8 @@ function App() {
                 setSound(true)
               }
             }}
-            href="#010"
-            children="...09"
+            href="#013"
+            children="...12"
           />
         </div>
       </div>
@@ -310,11 +309,6 @@ function App() {
           }
         }}
       >
-        <span id="bar-1" className={playing ? "sbar" : "sbar noAnim"}></span>
-        <span id="bar-2" className={playing ? "sbar" : "sbar noAnim"}></span>
-        <span id="bar-3" className={playing ? "sbar" : "sbar noAnim"}></span>
-        <span id="bar-4" className={playing ? "sbar" : "sbar noAnim"}></span>
-        <ReactHowler src={[tidesOfTimeMp3]} playing={playing} loop={true} />
         <ReactHowler
           src={[soundMp3]}
           playing={sound}

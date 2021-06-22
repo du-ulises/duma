@@ -18,13 +18,13 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Frontend Web and Mobile Developer + UI / UX Designer`,
+        name: `DUMA`,
         short_name: `DUMA`,
         start_url: `/`,
         background_color: `#000000`,
         theme_color: `#000000`,
         display: `standalone`,
-        icon: `src/images/DeerWhite.png`, // This path is relative to the root of the site.
+        icon: `src/images/Favicon.svg`, // This path is relative to the root of the site.
       },
     },
     {

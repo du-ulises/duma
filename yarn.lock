@@ -15124,9 +15124,9 @@ scroll-to-element@^2.0.3:
   dependencies:
     raf "^3.4.0"
 
-"scroller@git://github.com/mjohnston/scroller.git":
+"scroller@git://github.com/mjohnston/scroller":
   version "0.0.1"
-  resolved "git://github.com/mjohnston/scroller.git#054c3349d5ff7474589eb7fbbb36708e5c48e435"
+  resolved "git://github.com/mjohnston/scroller#054c3349d5ff7474589eb7fbbb36708e5c48e435"
 
 seek-bzip@^1.0.5:
   version "1.0.6"
