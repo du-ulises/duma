@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `DUMA`,
-    description: `Frontend Web and Mobile Developer + UI / UX Designer`,
+    description: `DUMA CODES`,
     author: `Diego Ulises Martínez Aguilar`,
   },
   plugins: [

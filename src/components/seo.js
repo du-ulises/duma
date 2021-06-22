@@ -9,6 +9,7 @@ import React from "react"
 import PropTypes from "prop-types"
 import { Helmet } from "react-helmet"
 import { useStaticQuery, graphql } from "gatsby"
+import DUMA from "../images/Favicon.svg"
 
 function SEO({ description, lang, meta, title }) {
   const { site } = useStaticQuery(
@@ -35,29 +36,66 @@ function SEO({ description, lang, meta, title }) {
       title={title}
       titleTemplate={`%s | ${site.siteMetadata.title}`}
       meta={[
+        //<!-- Primary Meta Tags -->
+        {
+          name: `title`,
+          content: `DUMA`,
+        },
+        {
+          name: `author`,
+          content: `Diego Ulises Martínez Aguilar`,
+        },
         {
           name: `description`,
           content: metaDescription,
+        },
+        {
+          name: `viewport`,
+          content: `width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no`,
+        },
+        {
+          name: `keywords`,
+          content: `software, engineer, frontend developer, web, mobile applications, portfolio, ui, ux, DUMA, duma studio, duma.studio, duma mx, duma méxico, Diego Ulises Martínez Aguilar`,
+        },
+        {
+          name: `date`,
+          content: `Mar. 03, 2021`,
+        },
+
+        //<!-- Open Graph / Facebook -->
+        {
+          property: `og:type`,
+          content: `website`,
+        },
+        {
+          property: `og:url`,
+          content: `https://duma.studio/`,
         },
         {
           property: `og:title`,
           content: title,
         },
         {
+          property: `og:image`,
+          content: DUMA,
+        },
+        {
           property: `og:description`,
           content: metaDescription,
         },
         {
-          property: `og:type`,
-          content: `website`,
+          property: `og:site_name`,
+          content: `DUMA`,
         },
+
+        //<!-- Twitter -->
         {
           name: `twitter:card`,
           content: `summary`,
         },
         {
-          name: `twitter:creator`,
-          content: site.siteMetadata.author,
+          name: `twitter:url`,
+          content: `https://duma.studio/`,
         },
         {
           name: `twitter:title`,
@@ -68,8 +106,12 @@ function SEO({ description, lang, meta, title }) {
           content: metaDescription,
         },
         {
-          name: `viewport`,
-          content: `width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no`,
+          property: `twitter:image`,
+          content: DUMA,
+        },
+        {
+          name: `twitter:creator`,
+          content: site.siteMetadata?.author || ``,
         },
       ].concat(meta)}
     />
