@@ -121,7 +121,7 @@ function SEO({ description, lang, meta, title }) {
 SEO.defaultProps = {
   lang: `en`,
   meta: [],
-  description: ``,
+  description: `I'm Diego Ulises Martínez Aguilar, a software engineer from Mexico, specialized in the development of web and mobile applications.`,
 }
 
 SEO.propTypes = {
